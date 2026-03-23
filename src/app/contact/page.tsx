@@ -106,13 +106,6 @@ export default function ContactPage() {
             </div>
 
             <div className="lg:col-span-2 space-y-8">
-              <div className="glass rounded-2xl p-6 md:p-8 border border-white/5">
-                <h2 className="font-display text-2xl font-bold text-white mb-6">
-                  Send a Message
-                </h2>
-                <ContactForm />
-              </div>
-
               <div className="glass rounded-2xl p-6 md:p-8 border border-white/5" id="book">
                 <h2 className="font-display text-2xl font-bold text-white mb-2">
                   Request a Booking
@@ -123,6 +116,14 @@ export default function ContactPage() {
                 </p>
                 <BookingRequestForm />
               </div>
+
+              <div className="glass rounded-2xl p-6 md:p-8 border border-white/5">
+                <h2 className="font-display text-2xl font-bold text-white mb-6">
+                  Send a Message
+                </h2>
+                <ContactForm />
+              </div>
+
             </div>
           </div>
         </div>
