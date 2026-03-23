@@ -1,36 +1,115 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Pool Academy
 
-## Getting Started
+Premium billiards venue website — built with Next.js 15, TypeScript, Tailwind CSS, Framer Motion, React Hook Form + Zod.
 
-First, run the development server:
+## 🚀 Quick Start
+
+### Prerequisites
+- Node.js 18+ or 20+ LTS
+- npm 9+
+
+### Installation
+
+```bash
+npm install
+```
+
+### Environment Setup
+
+Copy the example env file and fill in your values:
+
+```bash
+cp .env.example .env.local
+```
+
+| Variable | Description |
+|---|---|
+| `NEXT_PUBLIC_GOOGLE_MAPS_API_KEY` | Google Maps API key (for embed) |
+| `NEXT_PUBLIC_SITE_URL` | Production URL (e.g. `https://poolacademy.com`) |
+
+### Run Locally
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Build for Production
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+npm start
+```
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 📁 Project Structure
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
+src/
+├── app/                    # Next.js App Router pages
+│   ├── layout.tsx          # Root layout (fonts, meta, header/footer)
+│   ├── page.tsx            # Home page
+│   ├── about/page.tsx
+│   ├── services/page.tsx
+│   ├── events/page.tsx
+│   ├── gallery/page.tsx
+│   └── contact/page.tsx
+├── components/
+│   ├── layout/             # Header, Footer
+│   ├── forms/              # ContactForm, LeagueSignupForm, BookingRequestForm
+│   ├── sections/           # HeroSection, FeaturesSection, TablesSection, EventsPreviewSection
+│   ├── seo/                # LocalBusinessJsonLd
+│   └── ui/                 # SectionWrapper, EventCard, ServiceCard, CTABlock, GalleryGrid
+├── content/                # JSON/TS data files (CMS layer)
+│   ├── site-settings.ts    # Address, hours, social, phone
+│   ├── events.ts
+│   ├── services.ts
+│   └── gallery.ts
+└── lib/
+    ├── types.ts            # TypeScript interfaces
+    ├── schemas.ts          # Zod validation schemas
+    └── utils.ts            # Utility/formatting helpers
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 🌐 Deploy to Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Push to GitHub
+2. Go to [vercel.com](https://vercel.com) → **New Project** → import repo
+3. Add environment variables in Vercel dashboard (from `.env.example`)
+4. Click **Deploy**
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+That's it — Vercel auto-detects Next.js and handles everything.
+
+---
+
+## 📝 Content Management
+
+All content lives in `src/content/`. To update:
+
+- **Events**: Edit `src/content/events.ts`
+- **Services & Pricing**: Edit `src/content/services.ts`
+- **Gallery**: Edit `src/content/gallery.ts` and add images to `public/gallery/`
+- **Hours, address, phone**: Edit `src/content/site-settings.ts`
+
+No CMS dashboard needed — it's file-based and deploy-on-save with Vercel.
+
+---
+
+## 🖼️ Adding Gallery Images
+
+1. Add images to `public/gallery/` (WebP recommended, 800×600px min)
+2. Update `src/content/gallery.ts` with the new entries
+
+---
+
+## 🔮 Future Enhancements
+
+- **Payments**: Stripe integration for online booking deposits
+- **Reservations**: Real-time table availability with a booking engine
+- **E-commerce**: Equipment and merchandise store
+- **CMS migration**: Moving content to Sanity for non-developer editing
+- **Email forms**: Connect forms to Resend or SendGrid
