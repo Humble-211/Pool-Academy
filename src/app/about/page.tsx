@@ -26,7 +26,7 @@ export default function AboutPage() {
               <span className="text-gradient-emerald">A Community.</span>
             </h1>
             <p className="text-white/50 text-xl leading-relaxed">
-              Pool Academy was built on a simple belief: Buffalo deserves a
+              Pool Academy was built on a simple belief: GTA deserves a
               premium billiards destination. Not a dive bar with dusty tables —
               a venue where serious players, casual enthusiasts, and first-timers
               alike feel at home and inspired to improve.
@@ -46,7 +46,7 @@ export default function AboutPage() {
                 <p>
                   Founded by lifelong billiards enthusiasts, Pool Academy opened
                   its doors with a mission to bring world-class billiards culture
-                  to Western New York. We spent months sourcing the finest
+                  to the GTA. We spent months sourcing the finest
                   equipment — Predator Diamond Pro tables, three-piece slate
                   tables, and our crown jewel: a one-piece slate VIP table that
                   rivals anything you&apos;d find at a national championship.
@@ -67,10 +67,10 @@ export default function AboutPage() {
             </div>
             <div className="grid grid-cols-2 gap-4">
               {[
-                { value: "10", label: "Premium Tables", sub: "5 Predator + 4 slate + 1 VIP" },
+                { value: "5", label: "Premium Tables", sub: "4 Predator + 1 VIP" },
                 { value: "5+", label: "Active Leagues", sub: "Running year-round" },
                 { value: "100+", label: "Members", sub: "And growing" },
-                { value: "2024", label: "Established", sub: "Buffalo, NY" },
+                { value: "2025", label: "Established", sub: "Etobicoke, ON" },
               ].map((stat) => (
                 <div
                   key={stat.label}

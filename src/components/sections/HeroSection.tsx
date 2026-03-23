@@ -35,7 +35,7 @@ export function HeroSection() {
           className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-emerald-500/20 bg-emerald-500/5 text-emerald-400 text-sm font-medium mb-6"
         >
           <div className="w-1.5 h-1.5 bg-emerald-400 rounded-full animate-pulse" />
-          WNY&apos;s Premier Billiards Venue
+          Toronto&apos;s Premier Billiards Venue
         </motion.div>
 
         <motion.h1
@@ -56,7 +56,7 @@ export function HeroSection() {
           className="text-lg sm:text-xl text-white/50 max-w-2xl mx-auto mb-10 leading-relaxed"
         >
           10 premium tables. Curated leagues. Thrilling tournaments.
-          Buffalo&apos;s most elevated billiards experience — open for walk-ins,
+          Toronto&apos;s most elevated billiards experience — open for walk-ins,
           designed for those who take their game seriously.
         </motion.p>
 
@@ -119,7 +119,7 @@ export function HeroSection() {
           {[
             { value: "10", label: "Tables" },
             { value: "5+", label: "Leagues" },
-            { value: "#1", label: "in WNY" },
+            { value: "#1", label: "in GTA" },
           ].map((stat) => (
             <div key={stat.label} className="text-center">
               <div className="text-3xl font-bold text-gradient-emerald font-display">

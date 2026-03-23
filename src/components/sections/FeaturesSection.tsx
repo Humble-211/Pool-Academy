@@ -13,9 +13,9 @@ import {
 const features = [
   {
     icon: CircleDot,
-    title: "10 Premium Tables",
+    title: "6 Premium Tables",
     description:
-      "5 Predator Diamond Pro tables, 4 three-piece slate tables, and 1 VIP one-piece slate — the finest selection in WNY.",
+      "5 Predator Diamond Pro tables and 1 VIP one-piece slate — the finest selection in GTA.",
   },
   {
     icon: Trophy,
