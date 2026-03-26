@@ -55,7 +55,7 @@ export function HeroSection() {
           transition={{ duration: 0.7, delay: 0.2 }}
           className="text-lg sm:text-xl text-white/50 max-w-2xl mx-auto mb-10 leading-relaxed"
         >
-          10 premium tables. Curated leagues. Thrilling tournaments.
+          5 premium tables. Curated leagues. Thrilling tournaments.
           Toronto&apos;s most elevated billiards experience — open for walk-ins,
           designed for those who take their game seriously.
         </motion.p>
@@ -96,7 +96,7 @@ export function HeroSection() {
           <div className="w-px h-4 bg-white/10 hidden sm:block" />
           <div className="flex items-center gap-2">
             <div className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
-            <span>10 Premium Tables</span>
+            <span>5 Premium Tables</span>
           </div>
           <div className="w-px h-4 bg-white/10 hidden sm:block" />
           <div className="flex items-center gap-2">
@@ -117,7 +117,7 @@ export function HeroSection() {
           className="mt-16 grid grid-cols-3 gap-4 max-w-sm mx-auto"
         >
           {[
-            { value: "10", label: "Tables" },
+            { value: "5", label: "Tables" },
             { value: "5+", label: "Leagues" },
             { value: "#1", label: "in GTA" },
           ].map((stat) => (

@@ -60,11 +60,10 @@ export function ContactForm() {
             type="text"
             id="contact-name"
             placeholder="Your name"
-            className={`w-full px-4 py-3 rounded-xl bg-white/5 border text-white placeholder-white/25 focus:outline-none focus:ring-1 transition-colors text-sm ${
-              errors.name
+            className={`w-full px-4 py-3 rounded-xl bg-white/5 border text-white placeholder-white/25 focus:outline-none focus:ring-1 transition-colors text-sm ${errors.name
                 ? "border-red-500/50 focus:border-red-400 focus:ring-red-400"
                 : "border-white/10 focus:border-emerald-500/50 focus:ring-emerald-500"
-            }`}
+              }`}
           />
           {errors.name && (
             <p className="mt-1 text-red-400 text-xs flex items-center gap-1">
@@ -83,11 +82,10 @@ export function ContactForm() {
             type="email"
             id="contact-email"
             placeholder="you@example.com"
-            className={`w-full px-4 py-3 rounded-xl bg-white/5 border text-white placeholder-white/25 focus:outline-none focus:ring-1 transition-colors text-sm ${
-              errors.email
+            className={`w-full px-4 py-3 rounded-xl bg-white/5 border text-white placeholder-white/25 focus:outline-none focus:ring-1 transition-colors text-sm ${errors.email
                 ? "border-red-500/50 focus:border-red-400 focus:ring-red-400"
                 : "border-white/10 focus:border-emerald-500/50 focus:ring-emerald-500"
-            }`}
+              }`}
           />
           {errors.email && (
             <p className="mt-1 text-red-400 text-xs flex items-center gap-1">
@@ -121,11 +119,10 @@ export function ContactForm() {
             type="text"
             id="contact-subject"
             placeholder="How can we help?"
-            className={`w-full px-4 py-3 rounded-xl bg-white/5 border text-white placeholder-white/25 focus:outline-none focus:ring-1 transition-colors text-sm ${
-              errors.subject
+            className={`w-full px-4 py-3 rounded-xl bg-white/5 border text-white placeholder-white/25 focus:outline-none focus:ring-1 transition-colors text-sm ${errors.subject
                 ? "border-red-500/50 focus:border-red-400 focus:ring-red-400"
                 : "border-white/10 focus:border-emerald-500/50 focus:ring-emerald-500"
-            }`}
+              }`}
           />
           {errors.subject && (
             <p className="mt-1 text-red-400 text-xs flex items-center gap-1">
@@ -145,11 +142,10 @@ export function ContactForm() {
           id="contact-message"
           rows={5}
           placeholder="Tell us more about what you need..."
-          className={`w-full px-4 py-3 rounded-xl bg-white/5 border text-white placeholder-white/25 focus:outline-none focus:ring-1 transition-colors text-sm resize-none ${
-            errors.message
+          className={`w-full px-4 py-3 rounded-xl bg-white/5 border text-white placeholder-white/25 focus:outline-none focus:ring-1 transition-colors text-sm resize-none ${errors.message
               ? "border-red-500/50 focus:border-red-400 focus:ring-red-400"
               : "border-white/10 focus:border-emerald-500/50 focus:ring-emerald-500"
-          }`}
+            }`}
         />
         {errors.message && (
           <p className="mt-1 text-red-400 text-xs flex items-center gap-1">

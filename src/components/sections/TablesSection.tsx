@@ -36,7 +36,7 @@ export function TablesSection() {
             Our Tables
           </span>
           <h2 className="font-display text-4xl md:text-5xl font-bold text-white mb-4">
-            10 Tables. Zero Compromises.
+            5 Tables. Zero Compromises.
           </h2>
           <p className="text-white/40 text-lg max-w-xl mx-auto">
             Every table tells a story. Ours are written in Simonis cloth and
@@ -67,8 +67,8 @@ export function TablesSection() {
                       {table.type === "vip"
                         ? "VIP Table"
                         : table.type === "slate"
-                        ? "3-Piece Slate"
-                        : "Predator Pro"}
+                          ? "3-Piece Slate"
+                          : "Predator Pro"}
                     </span>
                     <h3 className="font-display text-xl font-bold text-white mt-1">
                       {table.name}
@@ -92,13 +92,12 @@ export function TablesSection() {
                       className="flex items-center gap-2 text-sm text-white/60"
                     >
                       <div
-                        className={`w-1.5 h-1.5 rounded-full shrink-0 ${
-                          table.type === "vip"
+                        className={`w-1.5 h-1.5 rounded-full shrink-0 ${table.type === "vip"
                             ? "bg-gold-400"
                             : table.type === "slate"
-                            ? "bg-blue-400"
-                            : "bg-emerald-400"
-                        }`}
+                              ? "bg-blue-400"
+                              : "bg-emerald-400"
+                          }`}
                       />
                       {f}
                     </li>

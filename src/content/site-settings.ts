@@ -12,8 +12,8 @@ export const siteSettings: SiteSettings = {
     zip: "M8V 1J8",
     country: "Canada",
   },
-  phone: "(416) 555-0192",
-  email: "djenakcr@gmail.com",
+  phone: "(416) 259-8487",
+  email: "poolacademy.club@gmail.com",
   hours: [
     { day: "Monday", open: "2:00 PM", close: "12:00 AM" },
     { day: "Tuesday", open: "2:00 PM", close: "12:00 AM" },

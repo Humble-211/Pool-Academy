@@ -61,11 +61,10 @@ export function BookingRequestForm() {
             id="booking-name"
             type="text"
             placeholder="Your name"
-            className={`w-full px-4 py-3 rounded-xl bg-white/5 border text-white placeholder-white/25 focus:outline-none focus:ring-1 transition-colors text-sm ${
-              errors.name
+            className={`w-full px-4 py-3 rounded-xl bg-white/5 border text-white placeholder-white/25 focus:outline-none focus:ring-1 transition-colors text-sm ${errors.name
                 ? "border-red-500/50 focus:border-red-400 focus:ring-red-400"
                 : "border-white/10 focus:border-emerald-500/50 focus:ring-emerald-500"
-            }`}
+              }`}
           />
           {errors.name && (
             <p className="mt-1 text-red-400 text-xs flex items-center gap-1">
@@ -83,11 +82,10 @@ export function BookingRequestForm() {
             id="booking-email"
             type="email"
             placeholder="you@example.com"
-            className={`w-full px-4 py-3 rounded-xl bg-white/5 border text-white placeholder-white/25 focus:outline-none focus:ring-1 transition-colors text-sm ${
-              errors.email
+            className={`w-full px-4 py-3 rounded-xl bg-white/5 border text-white placeholder-white/25 focus:outline-none focus:ring-1 transition-colors text-sm ${errors.email
                 ? "border-red-500/50 focus:border-red-400 focus:ring-red-400"
                 : "border-white/10 focus:border-emerald-500/50 focus:ring-emerald-500"
-            }`}
+              }`}
           />
           {errors.email && (
             <p className="mt-1 text-red-400 text-xs flex items-center gap-1">
@@ -107,11 +105,10 @@ export function BookingRequestForm() {
           id="booking-phone"
           type="tel"
           placeholder="(716) 555-0000"
-          className={`w-full px-4 py-3 rounded-xl bg-white/5 border text-white placeholder-white/25 focus:outline-none focus:ring-1 transition-colors text-sm ${
-            errors.phone
+          className={`w-full px-4 py-3 rounded-xl bg-white/5 border text-white placeholder-white/25 focus:outline-none focus:ring-1 transition-colors text-sm ${errors.phone
               ? "border-red-500/50 focus:border-red-400 focus:ring-red-400"
               : "border-white/10 focus:border-emerald-500/50 focus:ring-emerald-500"
-          }`}
+            }`}
         />
         {errors.phone && (
           <p className="mt-1 text-red-400 text-xs flex items-center gap-1">
@@ -130,11 +127,10 @@ export function BookingRequestForm() {
             {...register("date")}
             id="booking-date"
             type="date"
-            className={`w-full px-4 py-3 rounded-xl bg-[#1a1a1a] border text-white focus:outline-none focus:ring-1 transition-colors text-sm ${
-              errors.date
+            className={`w-full px-4 py-3 rounded-xl bg-[#1a1a1a] border text-white focus:outline-none focus:ring-1 transition-colors text-sm ${errors.date
                 ? "border-red-500/50 focus:border-red-400 focus:ring-red-400"
                 : "border-white/10 focus:border-emerald-500/50 focus:ring-emerald-500"
-            }`}
+              }`}
           />
           {errors.date && (
             <p className="mt-1 text-red-400 text-xs flex items-center gap-1">
@@ -150,14 +146,13 @@ export function BookingRequestForm() {
           <select
             {...register("time")}
             id="booking-time"
-            className={`w-full px-4 py-3 rounded-xl bg-[#1a1a1a] border text-white focus:outline-none focus:ring-1 transition-colors text-sm ${
-              errors.time
+            className={`w-full px-4 py-3 rounded-xl bg-[#1a1a1a] border text-white focus:outline-none focus:ring-1 transition-colors text-sm ${errors.time
                 ? "border-red-500/50 focus:border-red-400 focus:ring-red-400"
                 : "border-white/10 focus:border-emerald-500/50 focus:ring-emerald-500"
-            }`}
+              }`}
           >
             <option value="">Select time</option>
-            {["12:00 PM","1:00 PM","2:00 PM","3:00 PM","4:00 PM","5:00 PM","6:00 PM","7:00 PM","8:00 PM","9:00 PM","10:00 PM"].map((t) => (
+            {["12:00 PM", "1:00 PM", "2:00 PM", "3:00 PM", "4:00 PM", "5:00 PM", "6:00 PM", "7:00 PM", "8:00 PM", "9:00 PM", "10:00 PM"].map((t) => (
               <option key={t} value={t}>{t}</option>
             ))}
           </select>

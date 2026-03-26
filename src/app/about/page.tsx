@@ -7,7 +7,7 @@ import { Clock, MapPin, Phone, Mail } from "lucide-react";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "Learn about Pool Academy — Buffalo's premier billiards venue. Our story, our mission, and our commitment to the game.",
+    "Learn about Pool Academy — GTA's premier billiards venue. Our story, our mission, and our commitment to the game.",
 };
 
 export default function AboutPage() {
