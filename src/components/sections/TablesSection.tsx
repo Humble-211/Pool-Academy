@@ -4,19 +4,19 @@ import { motion } from "framer-motion";
 import { tables } from "@/content/services";
 
 const typeGradient: Record<string, string> = {
-  standard: "from-emerald-500/10 to-transparent",
+  standard: "from-gold-500/10 to-transparent",
   slate: "from-blue-500/10 to-transparent",
   vip: "from-gold-400/10 to-transparent",
 };
 
 const typeBorder: Record<string, string> = {
-  standard: "border-emerald-500/20",
+  standard: "border-gold-500/20",
   slate: "border-blue-500/20",
   vip: "border-gold-400/20",
 };
 
 const typeLabel: Record<string, string> = {
-  standard: "text-emerald-400",
+  standard: "text-gold-400",
   slate: "text-blue-400",
   vip: "text-gold-400",
 };
@@ -32,7 +32,7 @@ export function TablesSection() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <span className="inline-block text-emerald-400 text-sm font-semibold tracking-wider uppercase mb-3">
+          <span className="inline-block text-gold-400 text-sm font-semibold tracking-wider uppercase mb-3">
             Our Tables
           </span>
           <h2 className="font-display text-4xl md:text-5xl font-bold text-white mb-4">
@@ -96,7 +96,7 @@ export function TablesSection() {
                             ? "bg-gold-400"
                             : table.type === "slate"
                               ? "bg-blue-400"
-                              : "bg-emerald-400"
+                              : "bg-gold-400"
                           }`}
                       />
                       {f}

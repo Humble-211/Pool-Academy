@@ -56,10 +56,10 @@ export function LeagueSignupForm() {
       <motion.div
         initial={{ opacity: 0, scale: 0.95 }}
         animate={{ opacity: 1, scale: 1 }}
-        className="glass rounded-2xl p-10 border border-emerald-500/20 text-center"
+        className="glass rounded-2xl p-10 border border-gold-500/20 text-center"
       >
-        <div className="w-16 h-16 rounded-full bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center mx-auto mb-4">
-          <Trophy className="w-8 h-8 text-emerald-400" />
+        <div className="w-16 h-16 rounded-full bg-gold-500/10 border border-gold-500/20 flex items-center justify-center mx-auto mb-4">
+          <Trophy className="w-8 h-8 text-gold-400" />
         </div>
         <h3 className="text-white font-display text-2xl font-bold mb-2">
           {"You're Signed Up!"}
@@ -76,7 +76,7 @@ export function LeagueSignupForm() {
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
         <div>
           <label className="block text-sm font-medium text-white/70 mb-1.5">
-            First Name <span className="text-emerald-400">*</span>
+            First Name <span className="text-gold-400">*</span>
           </label>
           <input
             {...register("firstName")}
@@ -86,7 +86,7 @@ export function LeagueSignupForm() {
             className={`w-full px-4 py-3 rounded-xl bg-white/5 border text-white placeholder-white/25 focus:outline-none focus:ring-1 transition-colors text-sm ${
               errors.firstName
                 ? "border-red-500/50 focus:border-red-400 focus:ring-red-400"
-                : "border-white/10 focus:border-emerald-500/50 focus:ring-emerald-500"
+                : "border-white/10 focus:border-gold-500/50 focus:ring-gold-500"
             }`}
           />
           {errors.firstName && (
@@ -98,7 +98,7 @@ export function LeagueSignupForm() {
         </div>
         <div>
           <label className="block text-sm font-medium text-white/70 mb-1.5">
-            Last Name <span className="text-emerald-400">*</span>
+            Last Name <span className="text-gold-400">*</span>
           </label>
           <input
             {...register("lastName")}
@@ -108,7 +108,7 @@ export function LeagueSignupForm() {
             className={`w-full px-4 py-3 rounded-xl bg-white/5 border text-white placeholder-white/25 focus:outline-none focus:ring-1 transition-colors text-sm ${
               errors.lastName
                 ? "border-red-500/50 focus:border-red-400 focus:ring-red-400"
-                : "border-white/10 focus:border-emerald-500/50 focus:ring-emerald-500"
+                : "border-white/10 focus:border-gold-500/50 focus:ring-gold-500"
             }`}
           />
           {errors.lastName && (
@@ -123,7 +123,7 @@ export function LeagueSignupForm() {
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
         <div>
           <label className="block text-sm font-medium text-white/70 mb-1.5">
-            Email <span className="text-emerald-400">*</span>
+            Email <span className="text-gold-400">*</span>
           </label>
           <input
             {...register("email")}
@@ -133,7 +133,7 @@ export function LeagueSignupForm() {
             className={`w-full px-4 py-3 rounded-xl bg-white/5 border text-white placeholder-white/25 focus:outline-none focus:ring-1 transition-colors text-sm ${
               errors.email
                 ? "border-red-500/50 focus:border-red-400 focus:ring-red-400"
-                : "border-white/10 focus:border-emerald-500/50 focus:ring-emerald-500"
+                : "border-white/10 focus:border-gold-500/50 focus:ring-gold-500"
             }`}
           />
           {errors.email && (
@@ -145,7 +145,7 @@ export function LeagueSignupForm() {
         </div>
         <div>
           <label className="block text-sm font-medium text-white/70 mb-1.5">
-            Phone <span className="text-emerald-400">*</span>
+            Phone <span className="text-gold-400">*</span>
           </label>
           <input
             {...register("phone")}
@@ -155,7 +155,7 @@ export function LeagueSignupForm() {
             className={`w-full px-4 py-3 rounded-xl bg-white/5 border text-white placeholder-white/25 focus:outline-none focus:ring-1 transition-colors text-sm ${
               errors.phone
                 ? "border-red-500/50 focus:border-red-400 focus:ring-red-400"
-                : "border-white/10 focus:border-emerald-500/50 focus:ring-emerald-500"
+                : "border-white/10 focus:border-gold-500/50 focus:ring-gold-500"
             }`}
           />
           {errors.phone && (
@@ -169,7 +169,7 @@ export function LeagueSignupForm() {
 
       <div>
         <label className="block text-sm font-medium text-white/70 mb-1.5">
-          Skill Level <span className="text-emerald-400">*</span>
+          Skill Level <span className="text-gold-400">*</span>
         </label>
         <select
           {...register("skillLevel")}
@@ -177,7 +177,7 @@ export function LeagueSignupForm() {
           className={`w-full px-4 py-3 rounded-xl bg-[#1a1a1a] border text-white focus:outline-none focus:ring-1 transition-colors text-sm ${
             errors.skillLevel
               ? "border-red-500/50 focus:border-red-400 focus:ring-red-400"
-              : "border-white/10 focus:border-emerald-500/50 focus:ring-emerald-500"
+              : "border-white/10 focus:border-gold-500/50 focus:ring-gold-500"
           }`}
         >
           <option value="">Select your level</option>
@@ -196,7 +196,7 @@ export function LeagueSignupForm() {
 
       <div>
         <label className="block text-sm font-medium text-white/70 mb-2">
-          Preferred Play Days <span className="text-emerald-400">*</span>
+          Preferred Play Days <span className="text-gold-400">*</span>
         </label>
         <div className="flex flex-wrap gap-2">
           {daysOfWeek.map((day) => (
@@ -206,7 +206,7 @@ export function LeagueSignupForm() {
               onClick={() => toggleDay(day)}
               className={`px-3 py-1.5 rounded-lg text-sm font-medium transition-all border ${
                 selectedDays.includes(day)
-                  ? "bg-emerald-500/20 border-emerald-500/40 text-emerald-400"
+                  ? "bg-gold-500/20 border-gold-500/40 text-gold-400"
                   : "bg-white/5 border-white/10 text-white/50 hover:text-white hover:border-white/20"
               }`}
             >
@@ -231,7 +231,7 @@ export function LeagueSignupForm() {
           id="league-team"
           type="text"
           placeholder="Your team name, if applicable"
-          className="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-white/25 focus:outline-none focus:border-emerald-500/50 focus:ring-1 focus:ring-emerald-500 transition-colors text-sm"
+          className="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-white/25 focus:outline-none focus:border-gold-500/50 focus:ring-1 focus:ring-gold-500 transition-colors text-sm"
         />
       </div>
 
@@ -244,14 +244,14 @@ export function LeagueSignupForm() {
           id="league-notes"
           rows={3}
           placeholder="Anything else we should know?"
-          className="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-white/25 focus:outline-none focus:border-emerald-500/50 focus:ring-1 focus:ring-emerald-500 transition-colors text-sm resize-none"
+          className="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-white/25 focus:outline-none focus:border-gold-500/50 focus:ring-1 focus:ring-gold-500 transition-colors text-sm resize-none"
         />
       </div>
 
       <button
         type="submit"
         disabled={status === "loading"}
-        className="w-full flex items-center justify-center gap-2 py-3.5 bg-emerald-500 hover:bg-emerald-400 disabled:opacity-60 disabled:cursor-not-allowed text-black font-semibold rounded-xl transition-all text-sm"
+        className="w-full flex items-center justify-center gap-2 py-3.5 bg-gold-500 hover:bg-gold-400 disabled:opacity-60 disabled:cursor-not-allowed text-black font-semibold rounded-xl transition-all text-sm"
       >
         {status === "loading" ? (
           <>

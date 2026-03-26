@@ -70,7 +70,7 @@ export function FeaturesSection() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <span className="inline-block text-emerald-400 text-sm font-semibold tracking-wider uppercase mb-3">
+          <span className="inline-block text-gold-400 text-sm font-semibold tracking-wider uppercase mb-3">
             Why Pool Academy
           </span>
           <h2 className="font-display text-4xl md:text-5xl font-bold text-white mb-4">
@@ -91,12 +91,12 @@ export function FeaturesSection() {
               viewport={{ once: true, margin: "-40px" }}
               transition={{ duration: 0.5, delay: i * 0.08 }}
               whileHover={{ y: -4 }}
-              className="glass rounded-2xl p-6 border border-white/5 hover:border-emerald-500/20 transition-all duration-300 group"
+              className="glass rounded-2xl p-6 border border-white/5 hover:border-gold-500/20 transition-all duration-300 group"
             >
-              <div className="w-11 h-11 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center mb-4 group-hover:bg-emerald-500/20 transition-colors">
-                <feature.icon className="w-5 h-5 text-emerald-400" />
+              <div className="w-11 h-11 rounded-xl bg-gold-500/10 border border-gold-500/20 flex items-center justify-center mb-4 group-hover:bg-gold-500/20 transition-colors">
+                <feature.icon className="w-5 h-5 text-gold-400" />
               </div>
-              <h3 className="font-semibold text-white text-lg mb-2 group-hover:text-emerald-400 transition-colors">
+              <h3 className="font-semibold text-white text-lg mb-2 group-hover:text-gold-400 transition-colors">
                 {feature.title}
               </h3>
               <p className="text-white/40 text-sm leading-relaxed">

@@ -38,13 +38,13 @@ export function Footer() {
           <div className="lg:col-span-1">
             <Link href="/" className="flex items-center gap-3 mb-4 group">
               <div className="relative w-8 h-8">
-                <div className="absolute inset-0 bg-emerald-500 rounded-full opacity-20" />
-                <div className="relative w-8 h-8 border-2 border-emerald-500 rounded-full flex items-center justify-center">
-                  <div className="w-2 h-2 bg-emerald-400 rounded-full" />
+                <div className="absolute inset-0 bg-gold-500 rounded-full opacity-20" />
+                <div className="relative w-8 h-8 border-2 border-gold-500 rounded-full flex items-center justify-center">
+                  <div className="w-2 h-2 bg-gold-400 rounded-full" />
                 </div>
               </div>
               <span className="font-display text-lg font-bold text-white">
-                Pool <span className="text-gradient-emerald">Academy</span>
+                Pool <span className="text-gradient-gold">Academy</span>
               </span>
             </Link>
             <p className="text-white/50 text-sm leading-relaxed mb-6">
@@ -56,7 +56,7 @@ export function Footer() {
                   href={siteSettings.social.instagram}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-9 h-9 rounded-lg border border-white/10 flex items-center justify-center text-white/40 hover:text-emerald-400 hover:border-emerald-500/30 transition-all"
+                  className="w-9 h-9 rounded-lg border border-white/10 flex items-center justify-center text-white/40 hover:text-gold-400 hover:border-gold-500/30 transition-all"
                   aria-label="Instagram"
                 >
                   <InstagramIcon className="w-4 h-4" />
@@ -67,7 +67,7 @@ export function Footer() {
                   href={siteSettings.social.facebook}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-9 h-9 rounded-lg border border-white/10 flex items-center justify-center text-white/40 hover:text-emerald-400 hover:border-emerald-500/30 transition-all"
+                  className="w-9 h-9 rounded-lg border border-white/10 flex items-center justify-center text-white/40 hover:text-gold-400 hover:border-gold-500/30 transition-all"
                   aria-label="Facebook"
                 >
                   <FacebookIcon className="w-4 h-4" />
@@ -85,7 +85,7 @@ export function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="flex items-center gap-2 text-white/50 hover:text-emerald-400 text-sm transition-colors group"
+                    className="flex items-center gap-2 text-white/50 hover:text-gold-400 text-sm transition-colors group"
                   >
                     <ChevronRight className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" />
                     {link.label}
@@ -105,7 +105,7 @@ export function Footer() {
                   key={h.day}
                   className="flex items-start gap-2 text-sm text-white/50"
                 >
-                  <Clock className="w-3 h-3 mt-0.5 text-emerald-500/60 shrink-0" />
+                  <Clock className="w-3 h-3 mt-0.5 text-gold-500/60 shrink-0" />
                   <span>
                     <span className="text-white/70 font-medium">{h.day}:</span>{" "}
                     {h.closed ? "Closed" : `${h.open} – ${h.close}`}
@@ -121,7 +121,7 @@ export function Footer() {
             </h3>
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
-                <MapPin className="w-4 h-4 text-emerald-500 mt-0.5 shrink-0" />
+                <MapPin className="w-4 h-4 text-gold-500 mt-0.5 shrink-0" />
                 <span className="text-white/50 text-sm leading-snug">
                   {siteSettings.address.street}
                   <br />
@@ -130,19 +130,19 @@ export function Footer() {
                 </span>
               </li>
               <li className="flex items-center gap-3">
-                <Phone className="w-4 h-4 text-emerald-500 shrink-0" />
+                <Phone className="w-4 h-4 text-gold-500 shrink-0" />
                 <a
                   href={`tel:${siteSettings.phone}`}
-                  className="text-white/50 hover:text-emerald-400 text-sm transition-colors"
+                  className="text-white/50 hover:text-gold-400 text-sm transition-colors"
                 >
                   {siteSettings.phone}
                 </a>
               </li>
               <li className="flex items-center gap-3">
-                <Mail className="w-4 h-4 text-emerald-500 shrink-0" />
+                <Mail className="w-4 h-4 text-gold-500 shrink-0" />
                 <a
                   href={`mailto:${siteSettings.email}`}
-                  className="text-white/50 hover:text-emerald-400 text-sm transition-colors"
+                  className="text-white/50 hover:text-gold-400 text-sm transition-colors"
                 >
                   {siteSettings.email}
                 </a>
@@ -150,7 +150,7 @@ export function Footer() {
             </ul>
             <Link
               href="/contact"
-              className="inline-flex items-center gap-2 mt-6 px-4 py-2 bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-sm rounded-lg hover:bg-emerald-500/20 transition-colors"
+              className="inline-flex items-center gap-2 mt-6 px-4 py-2 bg-gold-500/10 border border-gold-500/20 text-gold-400 text-sm rounded-lg hover:bg-gold-500/20 transition-colors"
             >
               Book a Table
               <ChevronRight className="w-3 h-3" />

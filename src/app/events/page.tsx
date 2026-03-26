@@ -23,7 +23,7 @@ export default function EventsPage() {
         <div className="absolute inset-0 bg-green-glow opacity-30" />
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
-            <span className="inline-block text-emerald-400 text-sm font-semibold tracking-wider uppercase mb-4">
+            <span className="inline-block text-gold-400 text-sm font-semibold tracking-wider uppercase mb-4">
               Events & Leagues
             </span>
             <h1 className="font-display text-5xl md:text-6xl font-bold text-white mb-6">
@@ -73,7 +73,7 @@ export default function EventsPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
             <div>
-              <span className="inline-block text-emerald-400 text-sm font-semibold tracking-wider uppercase mb-4">
+              <span className="inline-block text-gold-400 text-sm font-semibold tracking-wider uppercase mb-4">
                 Join a League
               </span>
               <h2 className="font-display text-4xl font-bold text-white mb-4">
@@ -93,7 +93,7 @@ export default function EventsPage() {
                   "Year-round league calendar",
                 ].map((item) => (
                   <li key={item} className="flex items-center gap-3 text-white/60 text-sm">
-                    <div className="w-2 h-2 rounded-full bg-emerald-500 shrink-0" />
+                    <div className="w-2 h-2 rounded-full bg-gold-500 shrink-0" />
                     {item}
                   </li>
                 ))}

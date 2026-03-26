@@ -34,10 +34,10 @@ export function BookingRequestForm() {
       <motion.div
         initial={{ opacity: 0, scale: 0.95 }}
         animate={{ opacity: 1, scale: 1 }}
-        className="glass rounded-2xl p-10 border border-emerald-500/20 text-center"
+        className="glass rounded-2xl p-10 border border-gold-500/20 text-center"
       >
-        <div className="w-16 h-16 rounded-full bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center mx-auto mb-4">
-          <CalendarCheck className="w-8 h-8 text-emerald-400" />
+        <div className="w-16 h-16 rounded-full bg-gold-500/10 border border-gold-500/20 flex items-center justify-center mx-auto mb-4">
+          <CalendarCheck className="w-8 h-8 text-gold-400" />
         </div>
         <h3 className="text-white font-display text-2xl font-bold mb-2">
           Request Received!
@@ -54,7 +54,7 @@ export function BookingRequestForm() {
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
         <div>
           <label className="block text-sm font-medium text-white/70 mb-1.5">
-            Full Name <span className="text-emerald-400">*</span>
+            Full Name <span className="text-gold-400">*</span>
           </label>
           <input
             {...register("name")}
@@ -63,7 +63,7 @@ export function BookingRequestForm() {
             placeholder="Your name"
             className={`w-full px-4 py-3 rounded-xl bg-white/5 border text-white placeholder-white/25 focus:outline-none focus:ring-1 transition-colors text-sm ${errors.name
                 ? "border-red-500/50 focus:border-red-400 focus:ring-red-400"
-                : "border-white/10 focus:border-emerald-500/50 focus:ring-emerald-500"
+                : "border-white/10 focus:border-gold-500/50 focus:ring-gold-500"
               }`}
           />
           {errors.name && (
@@ -75,7 +75,7 @@ export function BookingRequestForm() {
         </div>
         <div>
           <label className="block text-sm font-medium text-white/70 mb-1.5">
-            Email <span className="text-emerald-400">*</span>
+            Email <span className="text-gold-400">*</span>
           </label>
           <input
             {...register("email")}
@@ -84,7 +84,7 @@ export function BookingRequestForm() {
             placeholder="you@example.com"
             className={`w-full px-4 py-3 rounded-xl bg-white/5 border text-white placeholder-white/25 focus:outline-none focus:ring-1 transition-colors text-sm ${errors.email
                 ? "border-red-500/50 focus:border-red-400 focus:ring-red-400"
-                : "border-white/10 focus:border-emerald-500/50 focus:ring-emerald-500"
+                : "border-white/10 focus:border-gold-500/50 focus:ring-gold-500"
               }`}
           />
           {errors.email && (
@@ -98,7 +98,7 @@ export function BookingRequestForm() {
 
       <div>
         <label className="block text-sm font-medium text-white/70 mb-1.5">
-          Phone <span className="text-emerald-400">*</span>
+          Phone <span className="text-gold-400">*</span>
         </label>
         <input
           {...register("phone")}
@@ -107,7 +107,7 @@ export function BookingRequestForm() {
           placeholder="(716) 555-0000"
           className={`w-full px-4 py-3 rounded-xl bg-white/5 border text-white placeholder-white/25 focus:outline-none focus:ring-1 transition-colors text-sm ${errors.phone
               ? "border-red-500/50 focus:border-red-400 focus:ring-red-400"
-              : "border-white/10 focus:border-emerald-500/50 focus:ring-emerald-500"
+              : "border-white/10 focus:border-gold-500/50 focus:ring-gold-500"
             }`}
         />
         {errors.phone && (
@@ -121,7 +121,7 @@ export function BookingRequestForm() {
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
         <div>
           <label className="block text-sm font-medium text-white/70 mb-1.5">
-            Date <span className="text-emerald-400">*</span>
+            Date <span className="text-gold-400">*</span>
           </label>
           <input
             {...register("date")}
@@ -129,7 +129,7 @@ export function BookingRequestForm() {
             type="date"
             className={`w-full px-4 py-3 rounded-xl bg-[#1a1a1a] border text-white focus:outline-none focus:ring-1 transition-colors text-sm ${errors.date
                 ? "border-red-500/50 focus:border-red-400 focus:ring-red-400"
-                : "border-white/10 focus:border-emerald-500/50 focus:ring-emerald-500"
+                : "border-white/10 focus:border-gold-500/50 focus:ring-gold-500"
               }`}
           />
           {errors.date && (
@@ -141,14 +141,14 @@ export function BookingRequestForm() {
         </div>
         <div>
           <label className="block text-sm font-medium text-white/70 mb-1.5">
-            Time <span className="text-emerald-400">*</span>
+            Time <span className="text-gold-400">*</span>
           </label>
           <select
             {...register("time")}
             id="booking-time"
             className={`w-full px-4 py-3 rounded-xl bg-[#1a1a1a] border text-white focus:outline-none focus:ring-1 transition-colors text-sm ${errors.time
                 ? "border-red-500/50 focus:border-red-400 focus:ring-red-400"
-                : "border-white/10 focus:border-emerald-500/50 focus:ring-emerald-500"
+                : "border-white/10 focus:border-gold-500/50 focus:ring-gold-500"
               }`}
           >
             <option value="">Select time</option>
@@ -168,12 +168,12 @@ export function BookingRequestForm() {
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
         <div>
           <label className="block text-sm font-medium text-white/70 mb-1.5">
-            Duration <span className="text-emerald-400">*</span>
+            Duration <span className="text-gold-400">*</span>
           </label>
           <select
             {...register("duration")}
             id="booking-duration"
-            className="w-full px-4 py-3 rounded-xl bg-[#1a1a1a] border border-white/10 text-white focus:outline-none focus:border-emerald-500/50 focus:ring-1 focus:ring-emerald-500 transition-colors text-sm"
+            className="w-full px-4 py-3 rounded-xl bg-[#1a1a1a] border border-white/10 text-white focus:outline-none focus:border-gold-500/50 focus:ring-1 focus:ring-gold-500 transition-colors text-sm"
           >
             <option value="1">1 hour</option>
             <option value="2">2 hours</option>
@@ -183,12 +183,12 @@ export function BookingRequestForm() {
         </div>
         <div>
           <label className="block text-sm font-medium text-white/70 mb-1.5">
-            Table Type <span className="text-emerald-400">*</span>
+            Table Type <span className="text-gold-400">*</span>
           </label>
           <select
             {...register("tablePreference")}
             id="booking-table"
-            className="w-full px-4 py-3 rounded-xl bg-[#1a1a1a] border border-white/10 text-white focus:outline-none focus:border-emerald-500/50 focus:ring-1 focus:ring-emerald-500 transition-colors text-sm"
+            className="w-full px-4 py-3 rounded-xl bg-[#1a1a1a] border border-white/10 text-white focus:outline-none focus:border-gold-500/50 focus:ring-1 focus:ring-gold-500 transition-colors text-sm"
           >
             <option value="any">No preference</option>
             <option value="standard">Standard (Predator)</option>
@@ -198,7 +198,7 @@ export function BookingRequestForm() {
         </div>
         <div>
           <label className="block text-sm font-medium text-white/70 mb-1.5">
-            Group Size <span className="text-emerald-400">*</span>
+            Group Size <span className="text-gold-400">*</span>
           </label>
           <input
             {...register("groupSize", { valueAsNumber: true })}
@@ -206,7 +206,7 @@ export function BookingRequestForm() {
             type="number"
             min={1}
             max={10}
-            className="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white focus:outline-none focus:border-emerald-500/50 focus:ring-1 focus:ring-emerald-500 transition-colors text-sm"
+            className="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white focus:outline-none focus:border-gold-500/50 focus:ring-1 focus:ring-gold-500 transition-colors text-sm"
           />
         </div>
       </div>
@@ -220,14 +220,14 @@ export function BookingRequestForm() {
           id="booking-requests"
           rows={3}
           placeholder="Any special arrangements, accessibility needs, or occasion details..."
-          className="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-white/25 focus:outline-none focus:border-emerald-500/50 focus:ring-1 focus:ring-emerald-500 transition-colors text-sm resize-none"
+          className="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-white/25 focus:outline-none focus:border-gold-500/50 focus:ring-1 focus:ring-gold-500 transition-colors text-sm resize-none"
         />
       </div>
 
       <button
         type="submit"
         disabled={status === "loading"}
-        className="w-full flex items-center justify-center gap-2 py-3.5 bg-emerald-500 hover:bg-emerald-400 disabled:opacity-60 disabled:cursor-not-allowed text-black font-semibold rounded-xl transition-all text-sm"
+        className="w-full flex items-center justify-center gap-2 py-3.5 bg-gold-500 hover:bg-gold-400 disabled:opacity-60 disabled:cursor-not-allowed text-black font-semibold rounded-xl transition-all text-sm"
       >
         {status === "loading" ? (
           <>

@@ -18,13 +18,13 @@ export default function ServicesPage() {
         <div className="absolute inset-0 bg-green-glow opacity-30" />
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
-            <span className="inline-block text-emerald-400 text-sm font-semibold tracking-wider uppercase mb-4">
+            <span className="inline-block text-gold-400 text-sm font-semibold tracking-wider uppercase mb-4">
               Services & Pricing
             </span>
             <h1 className="font-display text-5xl md:text-6xl font-bold text-white mb-6">
               Every Way
               <br />
-              <span className="text-gradient-emerald">to Play.</span>
+              <span className="text-gradient-gold">to Play.</span>
             </h1>
             <p className="text-white/50 text-xl leading-relaxed">
               From casual walk-in play to VIP private sessions and competitive
@@ -104,7 +104,7 @@ export default function ServicesPage() {
                         </div>
                       </td>
                       <td className="px-6 py-4 text-right">
-                        <span className="text-emerald-400 font-bold text-lg">
+                        <span className="text-gold-400 font-bold text-lg">
                           ${service.price!.amount}
                         </span>
                       </td>

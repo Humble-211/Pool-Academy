@@ -76,7 +76,7 @@ export function GalleryGrid({ images, categories }: GalleryGridProps) {
             onClick={() => setActiveCategory(cat)}
             className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${
               activeCategory === cat
-                ? "bg-emerald-500 text-black"
+                ? "bg-gold-500 text-black"
                 : "bg-white/5 border border-white/10 text-white/60 hover:text-white hover:border-white/20"
             }`}
           >
@@ -105,8 +105,8 @@ export function GalleryGrid({ images, categories }: GalleryGridProps) {
             >
               <div className="absolute inset-0 flex items-center justify-center">
                 <div className="text-center p-4">
-                  <div className="w-16 h-16 rounded-full bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center mx-auto mb-3">
-                    <ZoomIn className="w-6 h-6 text-emerald-400/60" />
+                  <div className="w-16 h-16 rounded-full bg-gold-500/10 border border-gold-500/20 flex items-center justify-center mx-auto mb-3">
+                    <ZoomIn className="w-6 h-6 text-gold-400/60" />
                   </div>
                   <p className="text-white/30 text-xs">{image.alt}</p>
                 </div>
@@ -176,8 +176,8 @@ export function GalleryGrid({ images, categories }: GalleryGridProps) {
             >
               <div className="w-full aspect-[4/3] bg-[#1a1a1a] rounded-xl flex items-center justify-center">
                 <div className="text-center p-8">
-                  <div className="w-20 h-20 rounded-full bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center mx-auto mb-4">
-                    <ZoomIn className="w-8 h-8 text-emerald-400/60" />
+                  <div className="w-20 h-20 rounded-full bg-gold-500/10 border border-gold-500/20 flex items-center justify-center mx-auto mb-4">
+                    <ZoomIn className="w-8 h-8 text-gold-400/60" />
                   </div>
                   <p className="text-white/50 text-sm">
                     {filtered[lightboxIndex]?.alt}

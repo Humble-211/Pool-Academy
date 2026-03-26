@@ -17,13 +17,13 @@ export default function GalleryPage() {
         <div className="absolute inset-0 bg-green-glow opacity-30" />
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
-            <span className="inline-block text-emerald-400 text-sm font-semibold tracking-wider uppercase mb-4">
+            <span className="inline-block text-gold-400 text-sm font-semibold tracking-wider uppercase mb-4">
               Gallery
             </span>
             <h1 className="font-display text-5xl md:text-6xl font-bold text-white mb-6">
               See It to
               <br />
-              <span className="text-gradient-emerald">Believe It.</span>
+              <span className="text-gradient-gold">Believe It.</span>
             </h1>
             <p className="text-white/50 text-xl leading-relaxed">
               A venue this premium speaks for itself. Browse our tables,

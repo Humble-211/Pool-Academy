@@ -29,7 +29,7 @@ export function CTABlock({
       <div className="flex flex-col sm:flex-row items-center gap-4">
         <Link
           href={primaryHref}
-          className="inline-flex items-center gap-2 px-6 py-3 bg-emerald-500 hover:bg-emerald-400 text-black font-semibold rounded-xl text-sm transition-all hover:shadow-emerald group"
+          className="inline-flex items-center gap-2 px-6 py-3 bg-gold-500 hover:bg-gold-400 text-black font-semibold rounded-xl text-sm transition-all hover:shadow-gold group"
         >
           {primaryLabel}
           <ChevronRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
@@ -63,7 +63,7 @@ export function CTABlock({
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link
               href={primaryHref}
-              className="inline-flex items-center gap-2 px-8 py-4 bg-emerald-500 hover:bg-emerald-400 text-black font-bold rounded-xl transition-all hover:shadow-emerald group text-base"
+              className="inline-flex items-center gap-2 px-8 py-4 bg-gold-500 hover:bg-gold-400 text-black font-bold rounded-xl transition-all hover:shadow-gold group text-base"
             >
               {primaryLabel}
               <ChevronRight className="w-5 h-5 group-hover:translate-x-0.5 transition-transform" />

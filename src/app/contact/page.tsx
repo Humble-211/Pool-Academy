@@ -18,13 +18,13 @@ export default function ContactPage() {
         <div className="absolute inset-0 bg-green-glow opacity-30" />
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
-            <span className="inline-block text-emerald-400 text-sm font-semibold tracking-wider uppercase mb-4">
+            <span className="inline-block text-gold-400 text-sm font-semibold tracking-wider uppercase mb-4">
               Contact
             </span>
             <h1 className="font-display text-5xl md:text-6xl font-bold text-white mb-6">
               Get in Touch.
               <br />
-              <span className="text-gradient-emerald">Reserve Your Table.</span>
+              <span className="text-gradient-gold">Reserve Your Table.</span>
             </h1>
             <p className="text-white/50 text-xl leading-relaxed">
               Questions, reservations, private events — we&apos;re here to help.
@@ -44,7 +44,7 @@ export default function ContactPage() {
                 </h2>
                 <ul className="space-y-4">
                   <li className="flex items-start gap-3">
-                    <MapPin className="w-5 h-5 text-emerald-400 mt-0.5 shrink-0" />
+                    <MapPin className="w-5 h-5 text-gold-400 mt-0.5 shrink-0" />
                     <div className="text-white/50 text-sm">
                       {siteSettings.address.street}
                       <br />
@@ -54,19 +54,19 @@ export default function ContactPage() {
                     </div>
                   </li>
                   <li className="flex items-center gap-3">
-                    <Phone className="w-5 h-5 text-emerald-400 shrink-0" />
+                    <Phone className="w-5 h-5 text-gold-400 shrink-0" />
                     <a
                       href={`tel:${siteSettings.phone}`}
-                      className="text-white/50 hover:text-emerald-400 text-sm transition-colors"
+                      className="text-white/50 hover:text-gold-400 text-sm transition-colors"
                     >
                       {siteSettings.phone}
                     </a>
                   </li>
                   <li className="flex items-center gap-3">
-                    <Mail className="w-5 h-5 text-emerald-400 shrink-0" />
+                    <Mail className="w-5 h-5 text-gold-400 shrink-0" />
                     <a
                       href={`mailto:${siteSettings.email}`}
-                      className="text-white/50 hover:text-emerald-400 text-sm transition-colors"
+                      className="text-white/50 hover:text-gold-400 text-sm transition-colors"
                     >
                       {siteSettings.email}
                     </a>
@@ -76,7 +76,7 @@ export default function ContactPage() {
 
               <div className="glass rounded-2xl p-6 border border-white/5">
                 <h3 className="font-semibold text-white mb-4 flex items-center gap-2 text-sm">
-                  <Clock className="w-4 h-4 text-emerald-400" />
+                  <Clock className="w-4 h-4 text-gold-400" />
                   Hours
                 </h3>
                 <ul className="space-y-2">

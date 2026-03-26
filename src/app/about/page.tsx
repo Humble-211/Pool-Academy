@@ -17,13 +17,13 @@ export default function AboutPage() {
         <div className="absolute inset-0 bg-green-glow opacity-30" />
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
-            <span className="inline-block text-emerald-400 text-sm font-semibold tracking-wider uppercase mb-4">
+            <span className="inline-block text-gold-400 text-sm font-semibold tracking-wider uppercase mb-4">
               About Us
             </span>
             <h1 className="font-display text-5xl md:text-6xl font-bold text-white mb-6">
               More Than a Pool Hall.
               <br />
-              <span className="text-gradient-emerald">A Community.</span>
+              <span className="text-gradient-gold">A Community.</span>
             </h1>
             <p className="text-white/50 text-xl leading-relaxed">
               Pool Academy was built on a simple belief: GTA deserves a
@@ -76,7 +76,7 @@ export default function AboutPage() {
                   key={stat.label}
                   className="glass rounded-2xl p-5 border border-white/5"
                 >
-                  <div className="font-display text-3xl font-bold text-gradient-emerald mb-1">
+                  <div className="font-display text-3xl font-bold text-gradient-gold mb-1">
                     {stat.value}
                   </div>
                   <div className="text-white font-semibold text-sm mb-0.5">
@@ -98,7 +98,7 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="glass rounded-2xl p-8 border border-white/5">
               <h3 className="font-semibold text-white text-lg mb-6 flex items-center gap-2">
-                <Clock className="w-5 h-5 text-emerald-400" />
+                <Clock className="w-5 h-5 text-gold-400" />
                 Hours of Operation
               </h3>
               <ul className="space-y-3">
@@ -120,7 +120,7 @@ export default function AboutPage() {
                 Contact & Location
               </h3>
               <div className="flex items-start gap-3">
-                <MapPin className="w-5 h-5 text-emerald-400 mt-0.5 shrink-0" />
+                <MapPin className="w-5 h-5 text-gold-400 mt-0.5 shrink-0" />
                 <div className="text-white/50 text-sm">
                   {siteSettings.address.street}
                   <br />
@@ -129,19 +129,19 @@ export default function AboutPage() {
                 </div>
               </div>
               <div className="flex items-center gap-3">
-                <Phone className="w-5 h-5 text-emerald-400 shrink-0" />
+                <Phone className="w-5 h-5 text-gold-400 shrink-0" />
                 <a
                   href={`tel:${siteSettings.phone}`}
-                  className="text-white/50 hover:text-emerald-400 text-sm transition-colors"
+                  className="text-white/50 hover:text-gold-400 text-sm transition-colors"
                 >
                   {siteSettings.phone}
                 </a>
               </div>
               <div className="flex items-center gap-3">
-                <Mail className="w-5 h-5 text-emerald-400 shrink-0" />
+                <Mail className="w-5 h-5 text-gold-400 shrink-0" />
                 <a
                   href={`mailto:${siteSettings.email}`}
-                  className="text-white/50 hover:text-emerald-400 text-sm transition-colors"
+                  className="text-white/50 hover:text-gold-400 text-sm transition-colors"
                 >
                   {siteSettings.email}
                 </a>

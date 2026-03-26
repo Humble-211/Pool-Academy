@@ -51,15 +51,15 @@ export function Header() {
           <div className="flex items-center justify-between h-18 py-4">
             <Link href="/" className="flex items-center gap-3 group">
               <div className="relative w-8 h-8">
-                <div className="absolute inset-0 bg-emerald-500 rounded-full opacity-20 group-hover:opacity-40 transition-opacity" />
-                <div className="relative w-8 h-8 border-2 border-emerald-500 rounded-full flex items-center justify-center">
-                  <div className="w-2 h-2 bg-emerald-400 rounded-full" />
+                <div className="absolute inset-0 bg-gold-500 rounded-full opacity-20 group-hover:opacity-40 transition-opacity" />
+                <div className="relative w-8 h-8 border-2 border-gold-500 rounded-full flex items-center justify-center">
+                  <div className="w-2 h-2 bg-gold-400 rounded-full" />
                 </div>
               </div>
               <div>
                 <span className="font-display text-lg font-bold text-white tracking-wide">
                   Pool{" "}
-                  <span className="text-gradient-emerald">Academy</span>
+                  <span className="text-gradient-gold">Academy</span>
                 </span>
               </div>
             </Link>
@@ -73,13 +73,13 @@ export function Header() {
                     href={link.href}
                     className={`text-sm font-medium tracking-wide transition-colors duration-200 relative group ${
                       isActive
-                        ? "text-emerald-400"
+                        ? "text-gold-400"
                         : "text-white/70 hover:text-white"
                     }`}
                   >
                     {link.label}
                     <span
-                      className={`absolute -bottom-1 left-0 h-px bg-emerald-500 transition-all duration-300 ${
+                      className={`absolute -bottom-1 left-0 h-px bg-gold-500 transition-all duration-300 ${
                         isActive
                           ? "w-full"
                           : "w-0 group-hover:w-full"
@@ -93,11 +93,11 @@ export function Header() {
             <div className="hidden md:flex items-center gap-4">
               <Link
                 href="/contact"
-                className="relative inline-flex items-center gap-2 px-5 py-2.5 bg-emerald-500 hover:bg-emerald-400 text-black font-semibold text-sm rounded-lg transition-all duration-200 group overflow-hidden"
+                className="relative inline-flex items-center gap-2 px-5 py-2.5 bg-gold-500 hover:bg-gold-400 text-black font-semibold text-sm rounded-lg transition-all duration-200 group overflow-hidden"
               >
                 <span className="relative z-10">Book a Table</span>
                 <ChevronRight className="relative z-10 w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
-                <div className="absolute inset-0 bg-emerald-400 translate-x-full group-hover:translate-x-0 transition-transform duration-300" />
+                <div className="absolute inset-0 bg-gold-400 translate-x-full group-hover:translate-x-0 transition-transform duration-300" />
               </Link>
             </div>
 
@@ -140,7 +140,7 @@ export function Header() {
                         href={link.href}
                         className={`flex items-center justify-between px-4 py-3 rounded-lg text-sm font-medium transition-colors ${
                           isActive
-                            ? "bg-emerald-500/10 text-emerald-400 border border-emerald-500/20"
+                            ? "bg-gold-500/10 text-gold-400 border border-gold-500/20"
                             : "text-white/70 hover:text-white hover:bg-white/5"
                         }`}
                       >
@@ -154,7 +154,7 @@ export function Header() {
               <div className="mt-auto pt-6 border-t border-white/10">
                 <Link
                   href="/contact"
-                  className="flex items-center justify-center gap-2 w-full py-3 bg-emerald-500 hover:bg-emerald-400 text-black font-semibold text-sm rounded-lg transition-colors"
+                  className="flex items-center justify-center gap-2 w-full py-3 bg-gold-500 hover:bg-gold-400 text-black font-semibold text-sm rounded-lg transition-colors"
                 >
                   Book a Table
                   <ChevronRight className="w-4 h-4" />

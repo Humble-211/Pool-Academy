@@ -30,7 +30,7 @@ export function getEventTypeLabel(type: Event["type"]): string {
 
 export function getEventTypeColor(type: Event["type"]): string {
   const colors: Record<Event["type"], string> = {
-    league: "emerald",
+    league: "gold",
     tournament: "gold",
     "open-play": "blue",
     special: "purple",

@@ -17,9 +17,9 @@ interface EventCardProps {
 
 const typeColors: Record<Event["type"], { bg: string; text: string; border: string }> = {
   league: {
-    bg: "bg-emerald-500/10",
-    text: "text-emerald-400",
-    border: "border-emerald-500/20",
+    bg: "bg-gold-500/10",
+    text: "text-gold-400",
+    border: "border-gold-500/20",
   },
   tournament: {
     bg: "bg-gold-400/10",
@@ -49,7 +49,7 @@ export function EventCard({ event, variant = "default" }: EventCardProps) {
       >
         <div className="flex items-start gap-4">
           <div className="shrink-0 text-center w-14 bg-white/5 rounded-lg p-2">
-            <span className="text-emerald-400 text-xs font-semibold uppercase tracking-wider block">
+            <span className="text-gold-400 text-xs font-semibold uppercase tracking-wider block">
               {new Date(event.date + "T12:00:00").toLocaleDateString("en-US", {
                 month: "short",
               })}
@@ -64,7 +64,7 @@ export function EventCard({ event, variant = "default" }: EventCardProps) {
             >
               {getEventTypeLabel(event.type)}
             </span>
-            <h3 className="text-white font-semibold text-sm leading-snug group-hover:text-emerald-400 transition-colors truncate">
+            <h3 className="text-white font-semibold text-sm leading-snug group-hover:text-gold-400 transition-colors truncate">
               {event.title}
             </h3>
             <p className="text-white/40 text-xs mt-1">
@@ -81,7 +81,7 @@ export function EventCard({ event, variant = "default" }: EventCardProps) {
     <motion.article
       whileHover={{ y: -4 }}
       transition={{ type: "spring", stiffness: 300, damping: 25 }}
-      className="glass rounded-2xl p-6 border border-white/5 hover:border-emerald-500/20 transition-all duration-300 group flex flex-col h-full"
+      className="glass rounded-2xl p-6 border border-white/5 hover:border-gold-500/20 transition-all duration-300 group flex flex-col h-full"
     >
       <div className="flex items-start justify-between mb-4">
         <span
@@ -96,7 +96,7 @@ export function EventCard({ event, variant = "default" }: EventCardProps) {
         )}
       </div>
 
-      <h3 className="font-display text-xl font-bold text-white mb-2 group-hover:text-emerald-400 transition-colors">
+      <h3 className="font-display text-xl font-bold text-white mb-2 group-hover:text-gold-400 transition-colors">
         {event.title}
       </h3>
       <p className="text-white/50 text-sm leading-relaxed mb-5 flex-1">
@@ -105,11 +105,11 @@ export function EventCard({ event, variant = "default" }: EventCardProps) {
 
       <div className="space-y-2 mb-5">
         <div className="flex items-center gap-2 text-white/60 text-sm">
-          <Calendar className="w-4 h-4 text-emerald-500/70 shrink-0" />
+          <Calendar className="w-4 h-4 text-gold-500/70 shrink-0" />
           <span>{formatEventDate(event.date)}</span>
         </div>
         <div className="flex items-center gap-2 text-white/60 text-sm">
-          <Clock className="w-4 h-4 text-emerald-500/70 shrink-0" />
+          <Clock className="w-4 h-4 text-gold-500/70 shrink-0" />
           <span>
             {event.time}
             {event.endTime ? ` – ${event.endTime}` : ""}
@@ -117,13 +117,13 @@ export function EventCard({ event, variant = "default" }: EventCardProps) {
         </div>
         {event.maxParticipants && (
           <div className="flex items-center gap-2 text-white/60 text-sm">
-            <Users className="w-4 h-4 text-emerald-500/70 shrink-0" />
+            <Users className="w-4 h-4 text-gold-500/70 shrink-0" />
             <span>Max {event.maxParticipants} participants</span>
           </div>
         )}
         {event.entryFee != null && (
           <div className="flex items-center gap-2 text-white/60 text-sm">
-            <DollarSign className="w-4 h-4 text-emerald-500/70 shrink-0" />
+            <DollarSign className="w-4 h-4 text-gold-500/70 shrink-0" />
             <span>${event.entryFee} entry fee</span>
           </div>
         )}
@@ -146,7 +146,7 @@ export function EventCard({ event, variant = "default" }: EventCardProps) {
       {event.registrationOpen ? (
         <Link
           href="/events"
-          className="inline-flex items-center justify-center w-full py-2.5 bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-sm font-semibold rounded-xl hover:bg-emerald-500/20 hover:border-emerald-500/40 transition-all"
+          className="inline-flex items-center justify-center w-full py-2.5 bg-gold-500/10 border border-gold-500/20 text-gold-400 text-sm font-semibold rounded-xl hover:bg-gold-500/20 hover:border-gold-500/40 transition-all"
         >
           Register Now
         </Link>

@@ -10,8 +10,8 @@ export function HeroSection() {
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#0a0a0a]">
       <div className="absolute inset-0">
         <div className="absolute inset-0 bg-gradient-to-br from-[#0a0a0a] via-[#111111] to-[#0d1f14]" />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-emerald-500/8 rounded-full blur-3xl" />
-        <div className="absolute top-1/4 right-1/3 w-[300px] h-[300px] bg-emerald-600/5 rounded-full blur-2xl" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gold-500/8 rounded-full blur-3xl" />
+        <div className="absolute top-1/4 right-1/3 w-[300px] h-[300px] bg-gold-600/5 rounded-full blur-2xl" />
 
         <div className="absolute inset-0 opacity-[0.03]">
           <div
@@ -32,9 +32,9 @@ export function HeroSection() {
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-emerald-500/20 bg-emerald-500/5 text-emerald-400 text-sm font-medium mb-6"
+          className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-gold-500/20 bg-gold-500/5 text-gold-400 text-sm font-medium mb-6"
         >
-          <div className="w-1.5 h-1.5 bg-emerald-400 rounded-full animate-pulse" />
+          <div className="w-1.5 h-1.5 bg-gold-400 rounded-full animate-pulse" />
           Toronto&apos;s Premier Billiards Venue
         </motion.div>
 
@@ -46,7 +46,7 @@ export function HeroSection() {
         >
           Where Precision
           <br />
-          <span className="text-gradient-emerald">Meets Passion</span>
+          <span className="text-gradient-gold">Meets Passion</span>
         </motion.h1>
 
         <motion.p
@@ -68,7 +68,7 @@ export function HeroSection() {
         >
           <Link
             href="/contact"
-            className="inline-flex items-center gap-2 px-8 py-4 bg-emerald-500 hover:bg-emerald-400 text-black font-bold rounded-xl transition-all hover:shadow-emerald group text-base"
+            className="inline-flex items-center gap-2 px-8 py-4 bg-gold-500 hover:bg-gold-400 text-black font-bold rounded-xl transition-all hover:shadow-gold group text-base"
           >
             Book a Table
             <ChevronRight className="w-5 h-5 group-hover:translate-x-0.5 transition-transform" />
@@ -88,19 +88,19 @@ export function HeroSection() {
           className="flex flex-wrap items-center justify-center gap-6 md:gap-10 text-sm text-white/40"
         >
           <div className="flex items-center gap-2">
-            <MapPin className="w-4 h-4 text-emerald-500/60" />
+            <MapPin className="w-4 h-4 text-gold-500/60" />
             <span>
               {siteSettings.address.city}, {siteSettings.address.state}
             </span>
           </div>
           <div className="w-px h-4 bg-white/10 hidden sm:block" />
           <div className="flex items-center gap-2">
-            <div className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
+            <div className="w-2 h-2 rounded-full bg-gold-400 animate-pulse" />
             <span>5 Premium Tables</span>
           </div>
           <div className="w-px h-4 bg-white/10 hidden sm:block" />
           <div className="flex items-center gap-2">
-            <Phone className="w-4 h-4 text-emerald-500/60" />
+            <Phone className="w-4 h-4 text-gold-500/60" />
             <a
               href={`tel:${siteSettings.phone}`}
               className="hover:text-white transition-colors"
@@ -122,7 +122,7 @@ export function HeroSection() {
             { value: "#1", label: "in GTA" },
           ].map((stat) => (
             <div key={stat.label} className="text-center">
-              <div className="text-3xl font-bold text-gradient-emerald font-display">
+              <div className="text-3xl font-bold text-gradient-gold font-display">
                 {stat.value}
               </div>
               <div className="text-white/30 text-xs mt-0.5">{stat.label}</div>
@@ -137,7 +137,7 @@ export function HeroSection() {
           transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
           className="w-6 h-10 rounded-full border border-white/10 flex items-start justify-center p-1.5"
         >
-          <div className="w-1 h-2 bg-emerald-500/60 rounded-full" />
+          <div className="w-1 h-2 bg-gold-500/60 rounded-full" />
         </motion.div>
       </div>
     </section>

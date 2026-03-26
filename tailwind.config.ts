@@ -18,15 +18,11 @@ const config: Config = {
           700: "#222222",
           600: "#2d2d2d",
         },
-        emerald: {
-          400: "#34d399",
-          500: "#10b981",
-          600: "#059669",
-        },
         gold: {
-          300: "#fcd34d",
+          300: "#fde68a",
           400: "#fbbf24",
           500: "#f59e0b",
+          600: "#d97706",
         },
       },
       fontFamily: {
@@ -41,9 +37,9 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
         "hero-gradient":
-          "linear-gradient(135deg, #0a0a0a 0%, #111111 50%, #0d1f14 100%)",
-        "green-glow":
-          "radial-gradient(ellipse at center, rgba(16,185,129,0.15) 0%, transparent 70%)",
+          "linear-gradient(135deg, #0a0a0a 0%, #111111 50%, #1a1400 100%)",
+        "gold-glow":
+          "radial-gradient(ellipse at center, rgba(251,191,36,0.15) 0%, transparent 70%)",
       },
       animation: {
         "fade-in": "fadeIn 0.5s ease-in-out",
@@ -61,10 +57,9 @@ const config: Config = {
         },
       },
       boxShadow: {
-        emerald: "0 0 30px rgba(16, 185, 129, 0.2)",
-        gold: "0 0 30px rgba(245, 158, 11, 0.2)",
+        gold: "0 0 30px rgba(251, 191, 36, 0.25)",
         "inner-dark": "inset 0 2px 4px 0 rgba(0, 0, 0, 0.5)",
-        glow: "0 0 60px rgba(16, 185, 129, 0.1)",
+        glow: "0 0 60px rgba(251, 191, 36, 0.12)",
       },
     },
   },

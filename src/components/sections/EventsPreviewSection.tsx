@@ -20,7 +20,7 @@ export function EventsPreviewSection() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <span className="inline-block text-emerald-400 text-sm font-semibold tracking-wider uppercase mb-3">
+            <span className="inline-block text-gold-400 text-sm font-semibold tracking-wider uppercase mb-3">
               Upcoming Events
             </span>
             <h2 className="font-display text-4xl md:text-5xl font-bold text-white">
@@ -35,7 +35,7 @@ export function EventsPreviewSection() {
           >
             <Link
               href="/events"
-              className="inline-flex items-center gap-2 text-emerald-400 hover:text-emerald-300 font-medium text-sm transition-colors group"
+              className="inline-flex items-center gap-2 text-gold-400 hover:text-gold-300 font-medium text-sm transition-colors group"
             >
               See all events
               <ChevronRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
