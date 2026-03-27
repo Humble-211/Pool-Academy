@@ -19,7 +19,7 @@ export const galleryImages: GalleryImage[] = [
   },
   {
     id: "3",
-    src: "/gallery/atmosphere-1.jpg",
+    src: "/gallery/atmosphere-1.JPG",
     alt: "Pool Academy interior — warm ambient lighting",
     caption: "Premium atmosphere, every visit",
     category: "atmosphere",
@@ -31,7 +31,7 @@ export const galleryImages: GalleryImage[] = [
     alt: "Close up of billiards cue on table",
     caption: "Precision in every detail",
     category: "atmosphere",
-    featured: false,
+    featured: true,
   },
   {
     id: "5",

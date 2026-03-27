@@ -7,7 +7,7 @@ import { galleryImages } from "@/content/gallery";
 export const metadata: Metadata = {
   title: "Gallery",
   description:
-    "Photos from Pool Academy — our premium billiards tables, venue atmosphere, events, and tournaments. Buffalo, NY's top billiards destination.",
+    "Photos from Pool Academy — our premium billiards tables, venue atmosphere, events, and tournaments. GTA's top billiards destination.",
 };
 
 export default function GalleryPage() {
@@ -35,6 +35,30 @@ export default function GalleryPage() {
 
       <SectionWrapper className="py-16 bg-[#111111]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* ── YouTube Feature Video ──────────────────────────────────────
+              Replace YOUTUBE_VIDEO_ID with the actual YouTube video ID.
+              e.g. for https://www.youtube.com/watch?v=dQw4w9WgXcQ → dQw4w9WgXcQ
+          ──────────────────────────────────────────────────────────────── */}
+          <div className="mb-14">
+            <div className="text-center mb-6">
+              <span className="inline-block text-gold-400 text-sm font-semibold tracking-wider uppercase mb-2">
+                Watch
+              </span>
+              <h2 className="font-display text-3xl md:text-4xl font-bold text-white">
+                Experience Pool Academy
+              </h2>
+            </div>
+            <div className="relative w-full aspect-video rounded-2xl overflow-hidden border border-white/5 shadow-2xl">
+              <iframe
+                src="https://www.youtube.com/embed/TfHOi37BR0Q?autoplay=1&mute=1&loop=1&playlist=TfHOi37BR0Q&controls=1&rel=0&modestbranding=1"
+                title="Pool Academy Feature Video"
+                allow="autoplay; encrypted-media; picture-in-picture"
+                allowFullScreen
+                className="absolute inset-0 w-full h-full"
+                loading="lazy"
+              />
+            </div>
+          </div>
           <GalleryGrid images={galleryImages} />
         </div>
       </SectionWrapper>

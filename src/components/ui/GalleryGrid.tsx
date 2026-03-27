@@ -103,12 +103,19 @@ export function GalleryGrid({ images, categories }: GalleryGridProps) {
               }`}
               onClick={() => openLightbox(index)}
             >
-              <div className="absolute inset-0 flex items-center justify-center">
+              <Image
+                src={image.src}
+                alt={image.alt}
+                fill
+                className="object-cover transition-transform duration-500 group-hover:scale-110"
+                sizes="(max-width: 768px) 50vw, 33vw"
+              />
+
+              <div className="absolute inset-0 flex items-center justify-center pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity">
                 <div className="text-center p-4">
-                  <div className="w-16 h-16 rounded-full bg-gold-500/10 border border-gold-500/20 flex items-center justify-center mx-auto mb-3">
-                    <ZoomIn className="w-6 h-6 text-gold-400/60" />
+                  <div className="w-12 h-12 rounded-full bg-black/40 backdrop-blur-md border border-white/20 flex items-center justify-center mx-auto mb-2">
+                    <ZoomIn className="w-5 h-5 text-white" />
                   </div>
-                  <p className="text-white/30 text-xs">{image.alt}</p>
                 </div>
               </div>
 
@@ -174,15 +181,14 @@ export function GalleryGrid({ images, categories }: GalleryGridProps) {
               className="relative max-w-3xl w-full max-h-[80vh] flex flex-col items-center gap-4"
               onClick={(e) => e.stopPropagation()}
             >
-              <div className="w-full aspect-[4/3] bg-[#1a1a1a] rounded-xl flex items-center justify-center">
-                <div className="text-center p-8">
-                  <div className="w-20 h-20 rounded-full bg-gold-500/10 border border-gold-500/20 flex items-center justify-center mx-auto mb-4">
-                    <ZoomIn className="w-8 h-8 text-gold-400/60" />
-                  </div>
-                  <p className="text-white/50 text-sm">
-                    {filtered[lightboxIndex]?.alt}
-                  </p>
-                </div>
+              <div className="relative w-full aspect-[4/3] bg-[#1a1a1a] rounded-xl overflow-hidden shadow-2xl">
+                <Image
+                  src={filtered[lightboxIndex].src}
+                  alt={filtered[lightboxIndex].alt}
+                  fill
+                  className="object-contain"
+                  priority
+                />
               </div>
               {filtered[lightboxIndex]?.caption && (
                 <p className="text-white/60 text-sm text-center">
