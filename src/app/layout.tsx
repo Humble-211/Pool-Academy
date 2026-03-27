@@ -5,6 +5,7 @@ import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { LocalBusinessJsonLd } from "@/components/seo/LocalBusinessJsonLd";
 import { siteSettings } from "@/content/site-settings";
+import { Analytics } from "@vercel/analytics/next"
 
 const inter = Inter({
   subsets: ["latin"],
