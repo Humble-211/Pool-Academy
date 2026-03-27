@@ -8,7 +8,7 @@ import { getUpcomingEvents, getEventTypeLabel } from "@/lib/utils";
 export const metadata: Metadata = {
   title: "Events & Leagues",
   description:
-    "Upcoming tournaments, weekly leagues, and special events at Pool Academy in Buffalo, NY. Register for leagues and sign up for open tournaments.",
+    "Upcoming tournaments, weekly leagues, and special events at Pool Academy in Etobicoke, ON. Register for leagues and sign up for open tournaments.",
 };
 
 const eventTypes = ["all", "league", "tournament", "open-play", "special"] as const;

@@ -18,7 +18,7 @@ export const services: Service[] = [
   },
   {
     id: "vip-table",
-    title: "VIP Suite — One-Piece Slate",
+    title: "VIP Lounge — One-Piece Slate",
     description:
       "Experience perfection on our premium one-piece slate table. The smoothest roll, the finest cloth, in a semi-private setting.",
     icon: "Star",
@@ -28,7 +28,7 @@ export const services: Service[] = [
       "Premium Simonis cloth",
       "Complimentary chalk & accessories",
     ],
-    price: { amount: 35, unit: "per hour" },
+    price: { amount: 25, unit: "per hour" },
     badge: "Premium",
   }
 ];

@@ -8,7 +8,7 @@ import { MapPin, Phone, Mail, Clock } from "lucide-react";
 export const metadata: Metadata = {
   title: "Contact & Booking",
   description:
-    "Contact Pool Academy or request a table booking. Located in Buffalo, NY. Call, email, or submit a booking request online.",
+    "Contact Pool Academy or request a table booking. Located in Etobicoke, ON. Call, email, or submit a booking request online.",
 };
 
 export default function ContactPage() {

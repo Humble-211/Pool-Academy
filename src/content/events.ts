@@ -35,7 +35,7 @@ export const events: Event[] = [
     id: "friday-open-play",
     title: "Friday Open Play Night",
     description:
-      "Casual open play every Friday. No reservation needed. Grab a table, rack 'em up, and enjoy the best billiards atmosphere in WNY.",
+      "Casual open play every Friday. No reservation needed. Grab a table, rack 'em up, and enjoy the best billiards atmosphere in GTA.",
     date: "2025-04-04",
     time: "6:00 PM",
     endTime: "12:00 AM",

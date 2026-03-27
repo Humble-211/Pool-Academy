@@ -41,11 +41,10 @@ export function Header() {
   return (
     <>
       <header
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-          scrolled
-            ? "bg-[#0a0a0a]/95 backdrop-blur-xl border-b border-white/5 shadow-xl"
-            : "bg-transparent"
-        }`}
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${scrolled
+          ? "bg-[#0a0a0a]/95 backdrop-blur-xl border-b border-white/5 shadow-xl"
+          : "bg-transparent"
+          }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-18 py-4">
@@ -71,19 +70,17 @@ export function Header() {
                   <Link
                     key={link.href}
                     href={link.href}
-                    className={`text-sm font-medium tracking-wide transition-colors duration-200 relative group ${
-                      isActive
-                        ? "text-gold-400"
-                        : "text-white/70 hover:text-white"
-                    }`}
+                    className={`text-sm font-medium tracking-wide transition-colors duration-200 relative group ${isActive
+                      ? "text-gold-400"
+                      : "text-white/70 hover:text-white"
+                      }`}
                   >
                     {link.label}
                     <span
-                      className={`absolute -bottom-1 left-0 h-px bg-gold-500 transition-all duration-300 ${
-                        isActive
-                          ? "w-full"
-                          : "w-0 group-hover:w-full"
-                      }`}
+                      className={`absolute -bottom-1 left-0 h-px bg-gold-500 transition-all duration-300 ${isActive
+                        ? "w-full"
+                        : "w-0 group-hover:w-full"
+                        }`}
                     />
                   </Link>
                 );
@@ -138,11 +135,10 @@ export function Header() {
                     >
                       <Link
                         href={link.href}
-                        className={`flex items-center justify-between px-4 py-3 rounded-lg text-sm font-medium transition-colors ${
-                          isActive
-                            ? "bg-gold-500/10 text-gold-400 border border-gold-500/20"
-                            : "text-white/70 hover:text-white hover:bg-white/5"
-                        }`}
+                        className={`flex items-center justify-between px-4 py-3 rounded-lg text-sm font-medium transition-colors ${isActive
+                          ? "bg-gold-500/10 text-gold-400 border border-gold-500/20"
+                          : "text-white/70 hover:text-white hover:bg-white/5"
+                          }`}
                       >
                         {link.label}
                         <ChevronRight className="w-4 h-4 opacity-50" />

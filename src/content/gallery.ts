@@ -53,7 +53,7 @@ export const galleryImages: GalleryImage[] = [
     id: "7",
     src: "/gallery/venue-exterior-1.jpg",
     alt: "Pool Academy entrance at night",
-    caption: "Find us in the heart of Buffalo",
+    caption: "Find us in the heart of Etobicoke",
     category: "venue",
     featured: false,
   },
