@@ -89,21 +89,21 @@ export function HeroSection() {
         >
           <div className="flex items-center gap-2">
             <MapPin className="w-4 h-4 text-gold-500/60" />
-            <span>
+            <span className="text-gold-400 font-medium">
               {siteSettings.address.city}, {siteSettings.address.state}
             </span>
           </div>
           <div className="w-px h-4 bg-white/10 hidden sm:block" />
           <div className="flex items-center gap-2">
             <div className="w-2 h-2 rounded-full bg-gold-400 animate-pulse" />
-            <span>5 Premium Tables</span>
+            <span className="text-gold-400 font-medium">5 Premium Tables</span>
           </div>
           <div className="w-px h-4 bg-white/10 hidden sm:block" />
           <div className="flex items-center gap-2">
             <Phone className="w-4 h-4 text-gold-500/60" />
             <a
               href={`tel:${siteSettings.phone}`}
-              className="hover:text-white transition-colors"
+              className="text-gold-400 font-medium hover:text-gold-300 transition-colors"
             >
               {siteSettings.phone}
             </a>
