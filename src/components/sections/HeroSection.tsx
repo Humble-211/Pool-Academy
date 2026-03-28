@@ -131,7 +131,31 @@ export function HeroSection() {
         </motion.div>
       </div>
 
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2">
+      {/* Cinematic venue image banner — first thing visitors see */}
+      <motion.div
+        initial={{ opacity: 0, scale: 1.04 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 1.1, delay: 0.9, ease: "easeOut" }}
+        className="absolute bottom-0 left-0 right-0 h-[38vh] md:h-[44vh] overflow-hidden pointer-events-none"
+      >
+        <img
+          src="/gallery/tables-row-1.jpg"
+          alt="Pool Academy – premium billiard tables"
+          className="w-full h-full object-cover object-center"
+        />
+        {/* top fade into the dark hero */}
+        <div className="absolute inset-0 bg-gradient-to-b from-[#0a0a0a] via-[#0a0a0a]/60 to-transparent pointer-events-none" />
+        {/* left & right edge fade */}
+        <div className="absolute inset-0 bg-gradient-to-r from-[#0a0a0a] via-transparent to-[#0a0a0a] opacity-50 pointer-events-none" />
+        {/* subtle label */}
+        <div className="absolute inset-0 flex items-end justify-center pb-14 pointer-events-none">
+          <span className="text-white/25 text-xs tracking-[0.25em] uppercase font-medium">
+            Pool Academy
+          </span>
+        </div>
+      </motion.div>
+
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10">
         <motion.div
           animate={{ y: [0, 8, 0] }}
           transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}

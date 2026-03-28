@@ -82,31 +82,6 @@ export function FeaturesSection() {
           </p>
         </motion.div>
 
-        {/* Cinematic venue image banner */}
-        <motion.div
-          initial={{ opacity: 0, scale: 1.04 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.9, ease: "easeOut" }}
-          className="relative w-full h-[340px] md:h-[420px] rounded-2xl overflow-hidden mb-12 shadow-2xl"
-        >
-          <img
-            src="/gallery/tables-row-1.jpg"
-            alt="Pool Academy – a row of premium billiard tables"
-            className="w-full h-full object-cover object-center"
-          />
-          {/* left & right fade to match section bg */}
-          <div className="absolute inset-0 bg-gradient-to-r from-[#0a0a0a] via-transparent to-[#0a0a0a] opacity-60 pointer-events-none" />
-          {/* bottom fade into card grid */}
-          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#0a0a0a] pointer-events-none" />
-          {/* subtle centre label */}
-          <div className="absolute inset-0 flex items-end justify-center pb-8 pointer-events-none">
-            <span className="text-white/30 text-xs tracking-[0.25em] uppercase font-medium">
-              Pool Academy
-            </span>
-          </div>
-        </motion.div>
-
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {features.map((feature, i) => (
             <motion.div
