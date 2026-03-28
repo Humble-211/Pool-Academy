@@ -24,7 +24,7 @@ export function EventsPreviewSection() {
               Upcoming Events
             </span>
             <h2 className="font-display text-4xl md:text-5xl font-bold text-white">
-              What&apos;s On
+              Stay Tuned
             </h2>
           </motion.div>
           <motion.div
