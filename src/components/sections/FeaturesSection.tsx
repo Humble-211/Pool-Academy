@@ -36,12 +36,6 @@ const features = [
       "From your first game to tournament-level play, Pool Academy welcomes everyone. Instruction available for beginners.",
   },
   {
-    icon: Shield,
-    title: "No Bar, Just Billiards",
-    description:
-      "A dedicated, upscale billiards venue — not a sports bar. The atmosphere is focused, premium, and distraction-free.",
-  },
-  {
     icon: Zap,
     title: "Walk-Ins Always Welcome",
     description:
@@ -70,7 +64,7 @@ export function FeaturesSection() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <span className="inline-block text-gold-400 text-sm font-semibold tracking-wider uppercase mb-3">
+          <span className="inline-block text-gold-400 text-lg font-semibold tracking-wider uppercase mb-3">
             Why Pool Academy
           </span>
           <h2 className="font-display text-4xl md:text-5xl font-bold text-white mb-4">

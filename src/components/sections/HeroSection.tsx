@@ -85,7 +85,7 @@ export function HeroSection() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 0.5 }}
-          className="flex flex-wrap items-center justify-center gap-6 md:gap-10 text-sm text-white/40"
+          className="flex flex-wrap items-center justify-center gap-6 md:gap-23 text-lg text-white/40"
         >
           <div className="flex items-center gap-2">
             <MapPin className="w-4 h-4 text-gold-500/60" />
@@ -114,7 +114,7 @@ export function HeroSection() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.7 }}
-          className="mt-2 sm:mt-4 grid grid-cols-3 gap-4 max-w-sm mx-auto"
+          className="mt-2 sm:mt-4 grid grid-cols-3 gap-6 max-w-sm mx-auto"
         >
           {[
             { value: "5", label: "Tables" },
@@ -135,7 +135,7 @@ export function HeroSection() {
       <motion.div
         initial={{ opacity: 0, scale: 1.04 }}
         animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 1.1, delay: 0.9, ease: "easeOut" }}
+        transition={{ duration: 0.5, delay: 0.2, ease: "easeOut" }}
         className="absolute inset-0 overflow-hidden pointer-events-none"
       >
         <img

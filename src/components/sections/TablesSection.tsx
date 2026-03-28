@@ -32,7 +32,7 @@ export function TablesSection() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <span className="inline-block text-gold-400 text-sm font-semibold tracking-wider uppercase mb-3">
+          <span className="inline-block text-gold-400 text-lg font-semibold tracking-wider uppercase mb-3">
             Our Tables
           </span>
           <h2 className="font-display text-4xl md:text-5xl font-bold text-white mb-4">
@@ -93,10 +93,10 @@ export function TablesSection() {
                     >
                       <div
                         className={`w-1.5 h-1.5 rounded-full shrink-0 ${table.type === "vip"
-                            ? "bg-gold-400"
-                            : table.type === "slate"
-                              ? "bg-blue-400"
-                              : "bg-gold-400"
+                          ? "bg-gold-400"
+                          : table.type === "slate"
+                            ? "bg-blue-400"
+                            : "bg-gold-400"
                           }`}
                       />
                       {f}

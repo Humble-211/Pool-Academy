@@ -56,7 +56,7 @@ export function Header() {
                 </div>
               </div>
               <div>
-                <span className="font-display text-lg font-bold text-white tracking-wide">
+                <span className="font-display text-xl font-bold text-white tracking-wide">
                   Pool{" "}
                   <span className="text-gradient-gold">Academy</span>
                 </span>
@@ -70,7 +70,7 @@ export function Header() {
                   <Link
                     key={link.href}
                     href={link.href}
-                    className={`text-sm font-medium tracking-wide transition-colors duration-200 relative group ${isActive
+                    className={`text-lg font-medium tracking-wide transition-colors duration-200 relative group ${isActive
                       ? "text-gold-400"
                       : "text-white/70 hover:text-white"
                       }`}
@@ -155,7 +155,7 @@ export function Header() {
                   Book a Table
                   <ChevronRight className="w-4 h-4" />
                 </Link>
-                <p className="text-center text-white/40 text-xs mt-4">
+                <p className="text-center text-white/40 text-base mt-4">
                   {siteSettings.phone}
                 </p>
               </div>
