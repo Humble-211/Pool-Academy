@@ -99,9 +99,8 @@ export default function ServicesPage() {
                   .map((service, i) => (
                     <tr
                       key={service.id}
-                      className={`border-b border-white/5 last:border-0 ${
-                        i % 2 === 0 ? "" : "bg-white/[0.02]"
-                      }`}
+                      className={`border-b border-white/5 last:border-0 ${i % 2 === 0 ? "" : "bg-white/[0.02]"
+                        }`}
                     >
                       <td className="px-6 py-4">
                         <div className="flex items-center gap-3">
