@@ -16,21 +16,33 @@ export default function AboutPage() {
       <section className="pt-32 pb-16 bg-[#0a0a0a] relative overflow-hidden">
         <div className="absolute inset-0 bg-green-glow opacity-30" />
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-3xl">
-            <span className="inline-block text-gold-400 text-sm font-semibold tracking-wider uppercase mb-4">
-              About Us
-            </span>
-            <h1 className="font-display text-5xl md:text-6xl font-bold text-white mb-6">
-              More Than a Pool Hall.
-              <br />
-              <span className="text-gradient-gold">A Community.</span>
-            </h1>
-            <p className="text-white/50 text-xl leading-relaxed">
-              Pool Academy was built on a simple belief: GTA deserves a
-              premium billiards destination. Not a dive bar with dusty tables —
-              a venue where serious players, casual enthusiasts, and first-timers
-              alike feel at home and inspired to improve.
-            </p>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            {/* Text */}
+            <div>
+              <span className="inline-block text-gold-400 text-sm font-semibold tracking-wider uppercase mb-4">
+                About Us
+              </span>
+              <h1 className="font-display text-5xl md:text-6xl font-bold text-white mb-6">
+                More Than a Pool Hall.
+                <br />
+                <span className="text-gradient-gold">A Community.</span>
+              </h1>
+              <p className="text-white/50 text-xl leading-relaxed">
+                Pool Academy was built on a simple belief: GTA deserves a
+                premium billiards destination. Not a dive bar with dusty tables —
+                a venue where serious players, casual enthusiasts, and first-timers
+                alike feel at home and inspired to improve.
+              </p>
+            </div>
+            {/* Image */}
+            <div className="relative rounded-2xl overflow-hidden aspect-[4/3] shadow-2xl ring-1 ring-white/10">
+              <img
+                src="/gallery/event-league-1.jpg"
+                alt="Pool Academy league event"
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
+            </div>
           </div>
         </div>
       </section>

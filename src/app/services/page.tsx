@@ -17,19 +17,31 @@ export default function ServicesPage() {
       <section className="pt-32 pb-16 bg-[#0a0a0a] relative overflow-hidden">
         <div className="absolute inset-0 bg-green-glow opacity-30" />
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-3xl">
-            <span className="inline-block text-gold-400 text-sm font-semibold tracking-wider uppercase mb-4">
-              Services & Pricing
-            </span>
-            <h1 className="font-display text-5xl md:text-6xl font-bold text-white mb-6">
-              Every Way
-              <br />
-              <span className="text-gradient-gold">to Play.</span>
-            </h1>
-            <p className="text-white/50 text-xl leading-relaxed">
-              From casual walk-in play to VIP private sessions and competitive
-              leagues — Pool Academy has a format for your game and your budget.
-            </p>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            {/* Text */}
+            <div>
+              <span className="inline-block text-gold-400 text-sm font-semibold tracking-wider uppercase mb-4">
+                Services & Pricing
+              </span>
+              <h1 className="font-display text-5xl md:text-6xl font-bold text-white mb-6">
+                Every Way
+                <br />
+                <span className="text-gradient-gold">to Play.</span>
+              </h1>
+              <p className="text-white/50 text-xl leading-relaxed">
+                From casual walk-in play to VIP private sessions and competitive
+                leagues — Pool Academy has a format for your game and your budget.
+              </p>
+            </div>
+            {/* Image */}
+            <div className="relative rounded-2xl overflow-hidden aspect-[4/3] shadow-2xl ring-1 ring-white/10">
+              <img
+                src="/gallery/services.jpg"
+                alt="Pool Academy services"
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
+            </div>
           </div>
         </div>
       </section>

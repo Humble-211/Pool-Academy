@@ -16,19 +16,31 @@ export default function GalleryPage() {
       <section className="pt-32 pb-16 bg-[#0a0a0a] relative overflow-hidden">
         <div className="absolute inset-0 bg-green-glow opacity-30" />
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-3xl">
-            <span className="inline-block text-gold-400 text-sm font-semibold tracking-wider uppercase mb-4">
-              Gallery
-            </span>
-            <h1 className="font-display text-5xl md:text-6xl font-bold text-white mb-6">
-              See It to
-              <br />
-              <span className="text-gradient-gold">Believe It.</span>
-            </h1>
-            <p className="text-white/50 text-xl leading-relaxed">
-              A venue this premium speaks for itself. Browse our tables,
-              atmosphere, and events — then come experience it in person.
-            </p>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            {/* Text */}
+            <div>
+              <span className="inline-block text-gold-400 text-sm font-semibold tracking-wider uppercase mb-4">
+                Gallery
+              </span>
+              <h1 className="font-display text-5xl md:text-6xl font-bold text-white mb-6">
+                See It to
+                <br />
+                <span className="text-gradient-gold">Believe It.</span>
+              </h1>
+              <p className="text-white/50 text-xl leading-relaxed">
+                A venue this premium speaks for itself. Browse our tables,
+                atmosphere, and events — then come experience it in person.
+              </p>
+            </div>
+            {/* Image */}
+            <div className="relative rounded-2xl overflow-hidden aspect-[4/3] shadow-2xl ring-1 ring-white/10">
+              <img
+                src="/gallery/atmosphere-2.jpg"
+                alt="Pool Academy atmosphere"
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
+            </div>
           </div>
         </div>
       </section>
