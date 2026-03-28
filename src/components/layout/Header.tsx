@@ -56,7 +56,7 @@ export function Header() {
                 </div>
               </div>
               <div>
-                <span className="font-display text-4xl font-bold text-white tracking-wide">
+                <span className="font-display text-3xl font-bold text-white tracking-wide">
                   Pool{" "}
                   <span className="text-gradient-gold">Academy</span>
                 </span>

@@ -35,20 +35,6 @@ export const services: Service[] = [
 
 export const tables: Table[] = [
   {
-    id: "predator",
-    name: "Predator Pool Tables",
-    type: "standard",
-    description:
-      "Five Predator Diamond Pro tables — the gold standard for professional billiards. 9-foot format available.",
-    count: 5,
-    features: [
-      "Simonis 860 cloth",
-      "Diamond-precise leveling",
-      "Pro-cut pockets",
-      "Predator break cues available",
-    ],
-  },
-  {
     id: "three-piece-slate",
     name: "Three-Piece Slate Tables",
     type: "slate",
