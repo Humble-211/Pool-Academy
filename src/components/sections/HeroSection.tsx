@@ -42,7 +42,7 @@ export function HeroSection() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.1 }}
-          className="font-display text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-white leading-[1.05] tracking-tight mb-6"
+          className="font-display text-4xl xs:text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-white leading-[1.05] tracking-tight mb-4 sm:mb-6"
         >
           Where Precision
           <br />
@@ -53,7 +53,7 @@ export function HeroSection() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.2 }}
-          className="text-lg sm:text-xl text-white/50 max-w-2xl mx-auto mb-10 leading-relaxed"
+          className="text-base sm:text-lg md:text-xl text-white/50 max-w-xs sm:max-w-xl md:max-w-2xl mx-auto mb-8 sm:mb-10 leading-relaxed px-2 sm:px-0"
         >
           5 premium tables. Curated leagues. Thrilling tournaments.
           Toronto&apos;s most elevated billiards experience — open for walk-ins,
@@ -64,18 +64,18 @@ export function HeroSection() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.3 }}
-          className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-14"
+          className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 mb-8 sm:mb-14"
         >
           <Link
             href="/contact"
-            className="inline-flex items-center gap-2 px-8 py-4 bg-gold-500 hover:bg-gold-400 text-black font-bold rounded-xl transition-all hover:shadow-gold group text-base"
+            className="inline-flex items-center gap-2 px-6 sm:px-8 py-3 sm:py-4 bg-gold-500 hover:bg-gold-400 text-black font-bold rounded-xl transition-all hover:shadow-gold group text-sm sm:text-base"
           >
             Book a Table
             <ChevronRight className="w-5 h-5 group-hover:translate-x-0.5 transition-transform" />
           </Link>
           <Link
             href="/events"
-            className="inline-flex items-center gap-2 px-8 py-4 border border-white/10 text-white/70 hover:text-white hover:border-white/20 font-medium rounded-xl transition-all text-base"
+            className="inline-flex items-center gap-2 px-6 sm:px-8 py-3 sm:py-4 border border-white/10 text-white/70 hover:text-white hover:border-white/20 font-medium rounded-xl transition-all text-sm sm:text-base"
           >
             View Events
           </Link>
@@ -114,7 +114,7 @@ export function HeroSection() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.7 }}
-          className="mt-4 grid grid-cols-3 gap-4 max-w-sm mx-auto"
+          className="mt-2 sm:mt-4 grid grid-cols-3 gap-4 max-w-sm mx-auto"
         >
           {[
             { value: "5", label: "Tables" },
@@ -141,10 +141,10 @@ export function HeroSection() {
         <img
           src="/gallery/tables-row-1.jpg"
           alt="Pool Academy – premium billiard tables"
-          className="w-full h-full object-cover object-center"
+          className="w-full h-full object-cover object-bottom sm:object-center"
         />
         {/* heavy top overlay so text stays readable */}
-        <div className="absolute inset-0 bg-gradient-to-b from-[#0a0a0a]/90 via-[#0a0a0a]/60 to-[#0a0a0a]/30 pointer-events-none" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#0a0a0a] via-[#0a0a0a]/70 sm:via-[#0a0a0a]/60 to-[#0a0a0a]/40 sm:to-[#0a0a0a]/30 pointer-events-none" />
         {/* left & right edge fade */}
         <div className="absolute inset-0 bg-gradient-to-r from-[#0a0a0a]/60 via-transparent to-[#0a0a0a]/60 pointer-events-none" />
         {/* subtle label */}
