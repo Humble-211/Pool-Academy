@@ -114,7 +114,7 @@ export function HeroSection() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.7 }}
-          className="mt-16 grid grid-cols-3 gap-4 max-w-sm mx-auto"
+          className="mt-4 grid grid-cols-3 gap-4 max-w-sm mx-auto"
         >
           {[
             { value: "5", label: "Tables" },
@@ -148,22 +148,13 @@ export function HeroSection() {
         {/* left & right edge fade */}
         <div className="absolute inset-0 bg-gradient-to-r from-[#0a0a0a] via-transparent to-[#0a0a0a] opacity-50 pointer-events-none" />
         {/* subtle label */}
-        <div className="absolute inset-0 flex items-end justify-center pb-14 pointer-events-none">
+        <div className="absolute inset-0 flex items-end justify-center pb-6 pointer-events-none">
           <span className="text-white/25 text-xs tracking-[0.25em] uppercase font-medium">
             Pool Academy
           </span>
         </div>
       </motion.div>
 
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10">
-        <motion.div
-          animate={{ y: [0, 8, 0] }}
-          transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-          className="w-6 h-10 rounded-full border border-white/10 flex items-start justify-center p-1.5"
-        >
-          <div className="w-1 h-2 bg-gold-500/60 rounded-full" />
-        </motion.div>
-      </div>
     </section>
   );
 }
