@@ -131,22 +131,22 @@ export function HeroSection() {
         </motion.div>
       </div>
 
-      {/* Cinematic venue image banner — first thing visitors see */}
+      {/* Cinematic venue image banner — full hero background */}
       <motion.div
         initial={{ opacity: 0, scale: 1.04 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 1.1, delay: 0.9, ease: "easeOut" }}
-        className="absolute bottom-0 left-0 right-0 h-[38vh] md:h-[44vh] overflow-hidden pointer-events-none"
+        className="absolute inset-0 overflow-hidden pointer-events-none"
       >
         <img
           src="/gallery/tables-row-1.jpg"
           alt="Pool Academy – premium billiard tables"
           className="w-full h-full object-cover object-center"
         />
-        {/* top fade into the dark hero */}
-        <div className="absolute inset-0 bg-gradient-to-b from-[#0a0a0a] via-[#0a0a0a]/60 to-transparent pointer-events-none" />
+        {/* heavy top overlay so text stays readable */}
+        <div className="absolute inset-0 bg-gradient-to-b from-[#0a0a0a]/90 via-[#0a0a0a]/60 to-[#0a0a0a]/30 pointer-events-none" />
         {/* left & right edge fade */}
-        <div className="absolute inset-0 bg-gradient-to-r from-[#0a0a0a] via-transparent to-[#0a0a0a] opacity-50 pointer-events-none" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#0a0a0a]/60 via-transparent to-[#0a0a0a]/60 pointer-events-none" />
         {/* subtle label */}
         <div className="absolute inset-0 flex items-end justify-center pb-6 pointer-events-none">
           <span className="text-white/25 text-xs tracking-[0.25em] uppercase font-medium">
