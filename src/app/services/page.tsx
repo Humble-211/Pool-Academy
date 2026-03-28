@@ -36,7 +36,7 @@ export default function ServicesPage() {
             {/* Image */}
             <div className="relative rounded-2xl overflow-hidden aspect-[4/3] shadow-2xl ring-1 ring-white/10">
               <img
-                src="/gallery/services.jpg"
+                src="/gallery/SERVICE.jpg"
                 alt="Pool Academy services"
                 className="w-full h-full object-cover"
               />
