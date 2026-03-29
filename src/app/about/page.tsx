@@ -13,37 +13,36 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <>
-      <section className="pt-32 pb-16 bg-[#0a0a0a] relative overflow-hidden">
-        <div className="absolute inset-0 bg-green-glow opacity-30" />
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            {/* Text */}
-            <div>
-              <span className="inline-block text-gold-400 text-sm font-semibold tracking-wider uppercase mb-4">
-                About Us
-              </span>
-              <h1 className="font-display text-5xl md:text-6xl font-bold text-white mb-6">
-                More Than a Pool Hall.
-                <br />
-                <span className="text-gradient-gold">A Community.</span>
-              </h1>
-              <p className="text-white/50 text-xl leading-relaxed">
-                Pool Academy was built on a simple belief: GTA deserves a
-                premium billiards destination. Not a dive bar with dusty tables —
-                a venue where serious players, casual enthusiasts, and first-timers
-                alike feel at home and inspired to improve.
-              </p>
-            </div>
-            {/* Image */}
-            <div className="relative rounded-2xl overflow-hidden aspect-[4/3] shadow-2xl ring-1 ring-white/10">
-              <img
-                src="/gallery/event-league-1.jpg"
-                alt="Pool Academy league event"
-                className="w-full h-full object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
-            </div>
-          </div>
+      <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden bg-[#0a0a0a]">
+        {/* Background image */}
+        <div className="absolute inset-0">
+          <img
+            src="/gallery/event-league-1.jpg"
+            alt="Pool Academy league event"
+            className="w-full h-full object-cover object-center"
+          />
+          {/* top-heavy overlay so text stays readable */}
+          <div className="absolute inset-0 bg-gradient-to-b from-[#0a0a0a] via-[#0a0a0a]/70 to-[#0a0a0a]/40" />
+          {/* left & right edge fade */}
+          <div className="absolute inset-0 bg-gradient-to-r from-[#0a0a0a]/60 via-transparent to-[#0a0a0a]/60" />
+        </div>
+
+        {/* Content */}
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-20 text-center">
+          <span className="inline-block text-gold-400 text-sm font-semibold tracking-wider uppercase mb-4">
+            About Us
+          </span>
+          <h1 className="font-display text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
+            More Than a Pool Hall.
+            <br />
+            <span className="text-gradient-gold">A Community.</span>
+          </h1>
+          <p className="text-white/60 text-xl leading-relaxed max-w-2xl mx-auto">
+            Pool Academy was built on a simple belief: GTA deserves a
+            premium billiards destination. Not a dive bar with dusty tables —
+            a venue where serious players, casual enthusiasts, and first-timers
+            alike feel at home and inspired to improve.
+          </p>
         </div>
       </section>
 

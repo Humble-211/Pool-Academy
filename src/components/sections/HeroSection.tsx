@@ -56,8 +56,7 @@ export function HeroSection() {
           className="text-base sm:text-lg md:text-xl text-white/50 max-w-xs sm:max-w-xl md:max-w-2xl mx-auto mb-8 sm:mb-10 leading-relaxed px-2 sm:px-0"
         >
           5 premium tables. Curated leagues. Thrilling tournaments.
-          Toronto&apos;s most elevated billiards experience — open for walk-ins,
-          designed for those who take their game seriously.
+          Toronto&apos;s most elevated billiards experience
         </motion.p>
 
         <motion.div

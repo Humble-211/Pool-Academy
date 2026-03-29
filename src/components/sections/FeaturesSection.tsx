@@ -15,7 +15,7 @@ const features = [
     icon: CircleDot,
     title: "5 Premium Tables",
     description:
-      "5 Predator Diamond Pro tables and 1 VIP one-piece slate — the finest selection in GTA.",
+      "4 Predator Diamond Pro tables and 1 VIP one-piece slate — the finest selection in GTA.",
   },
   {
     icon: Trophy,
