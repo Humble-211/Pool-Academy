@@ -1,6 +1,7 @@
 import nodemailer from "nodemailer";
 import { NextRequest, NextResponse } from "next/server";
 import { bookingRequestSchema } from "@/lib/schemas";
+import { addBookingToCalendar } from "@/lib/googleCalendar";
 
 const transporter = nodemailer.createTransport({
   service: "gmail",
@@ -81,13 +82,34 @@ export async function POST(req: NextRequest) {
 
     const data = result.data;
 
-    await transporter.sendMail({
+    /*await transporter.sendMail({
       from: `"Pool Academy Bookings" <${process.env.GMAIL_USER}>`,
       to: process.env.EMAIL_TO,
       subject: `🎱 New Booking Request — ${data.name} on ${data.date} at ${data.time}`,
       html: buildEmailHtml(data),
       replyTo: data.email,
-    });
+    });*/
+
+    // Google Calendar — non-blocking: a failure never breaks the booking
+    try {
+      const eventId = await addBookingToCalendar(data);
+      console.log(`[booking/route] Calendar event created: ${eventId}`);
+    } catch (calErr: unknown) {
+      // Extract full Google API error details for diagnosis
+      const msg = calErr instanceof Error ? calErr.message : String(calErr);
+      const apiBody =
+        calErr &&
+          typeof calErr === "object" &&
+          "response" in calErr &&
+          calErr.response &&
+          typeof calErr.response === "object" &&
+          "data" in calErr.response
+          ? JSON.stringify(calErr.response.data)
+          : "(no API body)";
+      console.error(
+        `[booking/route] Calendar event failed (non-blocking): ${msg} | API body: ${apiBody}`
+      );
+    }
 
     return NextResponse.json({ success: true });
   } catch (err) {
