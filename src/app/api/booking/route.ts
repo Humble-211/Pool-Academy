@@ -82,13 +82,13 @@ export async function POST(req: NextRequest) {
 
     const data = result.data;
 
-    /*await transporter.sendMail({
+    await transporter.sendMail({
       from: `"Pool Academy Bookings" <${process.env.GMAIL_USER}>`,
       to: process.env.EMAIL_TO,
       subject: `🎱 New Booking Request — ${data.name} on ${data.date} at ${data.time}`,
       html: buildEmailHtml(data),
       replyTo: data.email,
-    });*/
+    });
 
     // Google Calendar — non-blocking: a failure never breaks the booking
     try {
