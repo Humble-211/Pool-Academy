@@ -8,7 +8,8 @@ import { motion } from "framer-motion";
 import { bookingRequestSchema, type BookingRequestSchema } from "@/lib/schemas";
 
 export function BookingRequestForm() {
-  const [status, setStatus] = useState<"idle" | "loading" | "success">("idle");
+  const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
+  const [errorMsg, setErrorMsg] = useState<string>("");
 
   const {
     register,
@@ -22,11 +23,24 @@ export function BookingRequestForm() {
 
   const onSubmit = async (data: BookingRequestSchema) => {
     setStatus("loading");
-    await new Promise((r) => setTimeout(r, 1200));
-    console.log("Booking request:", data);
-    setStatus("success");
-    reset();
-    setTimeout(() => setStatus("idle"), 6000);
+    setErrorMsg("");
+    try {
+      const res = await fetch("/api/booking", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      });
+      if (!res.ok) {
+        const json = await res.json().catch(() => ({}));
+        throw new Error(json.error ?? "Something went wrong. Please try again.");
+      }
+      setStatus("success");
+      reset();
+      setTimeout(() => setStatus("idle"), 6000);
+    } catch (err) {
+      setErrorMsg(err instanceof Error ? err.message : "Something went wrong.");
+      setStatus("error");
+    }
   };
 
   if (status === "success") {
@@ -51,6 +65,12 @@ export function BookingRequestForm() {
 
   return (
     <form onSubmit={handleSubmit(onSubmit)} className="space-y-5" noValidate>
+      {status === "error" && (
+        <div className="flex items-start gap-3 p-4 rounded-xl bg-red-500/10 border border-red-500/30">
+          <AlertCircle className="w-4 h-4 text-red-400 flex-shrink-0 mt-0.5" />
+          <p className="text-red-400 text-sm">{errorMsg}</p>
+        </div>
+      )}
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
         <div>
           <label className="block text-sm font-medium text-white/70 mb-1.5">
