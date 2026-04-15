@@ -54,10 +54,25 @@ export default function ServicesPage() {
               welcome you however you arrive.
             </p>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {services.map((service, i) => (
-              <ServiceCard key={service.id} service={service} delay={i * 0.07} />
-            ))}
+          <div className="flex flex-col lg:flex-row gap-10 items-stretch">
+            {/* Price menu image */}
+            <div className="w-full lg:w-90 lg:flex-shrink-0 lg:sticky lg:top-28 lg:h-[720px]">
+              <div className="relative rounded-2xl overflow-hidden border border-white/10 shadow-2xl shadow-black/60 h-full">
+                <img
+                  src="/gallery/price-menu.png"
+                  alt="Pool Academy price menu"
+                  className="w-full h-full object-cover object-top"
+                />
+                <div className="absolute inset-0 rounded-2xl ring-1 ring-inset ring-white/10 pointer-events-none" />
+              </div>
+            </div>
+
+            {/* Service cards — scrollable to match image height */}
+            <div className="flex-1 lg:h-[720px] lg:overflow-y-auto pr-1 grid grid-cols-1 sm:grid-cols-2 gap-6 content-start">
+              {services.map((service, i) => (
+                <ServiceCard key={service.id} service={service} delay={i * 0.07} />
+              ))}
+            </div>
           </div>
         </div>
       </SectionWrapper>
