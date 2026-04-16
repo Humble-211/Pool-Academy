@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { SectionWrapper } from "@/components/ui/SectionWrapper";
 import { ServiceCard } from "@/components/ui/ServiceCard";
 import { CTABlock } from "@/components/ui/CTABlock";
@@ -56,30 +57,25 @@ export default function ServicesPage() {
           </div>
           {/* Price menu images — side by side */}
           <div className="flex flex-col sm:flex-row gap-4 mb-10">
-            <div className="relative flex-1 rounded-2xl overflow-hidden border border-white/10 shadow-2xl shadow-black/60">
+            <Link href="/contact" className="relative flex-1 rounded-2xl overflow-hidden border border-white/10 shadow-2xl shadow-black/60 block hover:opacity-90 transition-opacity cursor-pointer">
               <img
                 src="/gallery/price-menu.png"
                 alt="Pool Academy price menu"
                 className="w-full h-auto object-cover object-top"
               />
               <div className="absolute inset-0 rounded-2xl ring-1 ring-inset ring-white/10 pointer-events-none" />
-            </div>
-            <div className="relative flex-1 rounded-2xl overflow-hidden border border-white/10 shadow-2xl shadow-black/60">
+            </Link>
+            <Link href="/contact" className="relative flex-1 rounded-2xl overflow-hidden border border-white/10 shadow-2xl shadow-black/60 block hover:opacity-90 transition-opacity cursor-pointer">
               <img
                 src="/gallery/price-menu-1.jpg"
                 alt="Pool Academy price menu continued"
                 className="w-full h-auto object-cover object-top"
               />
               <div className="absolute inset-0 rounded-2xl ring-1 ring-inset ring-white/10 pointer-events-none" />
-            </div>
+            </Link>
           </div>
 
-          {/* Service cards */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {services.map((service, i) => (
-              <ServiceCard key={service.id} service={service} delay={i * 0.07} />
-            ))}
-          </div>
+
         </div>
       </SectionWrapper>
 
